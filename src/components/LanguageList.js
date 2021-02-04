@@ -1,10 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-function LanguageList() {
+function LanguageList(props) {
    
         return(
-            <div className="language">languages</div>
+            <div className="language">
+                {props.languages.map(lang => {
+                    return (
+                        <img src={lang.flag_image} />
+                    )
+                })}
+            </div>
            
         )
     
