@@ -3,7 +3,16 @@ import React, { Component } from 'react';
 //you want to dispatch a thunk action in componentDidMount
 //to fetch list of lanugages from API and update app state with that list
 import LanguageList from '../components/LanguageList'
+import { fetchLanguages } from '../actions/fetchLanguages'
+import { connect } from 'react-redux';
+
 class Home extends Component {
+
+
+    componentDidMount() {
+      this.props.fetchLanguages()
+    }
+
  render() {
      return(
          <>
@@ -11,8 +20,16 @@ class Home extends Component {
             <LanguageList />
          </>
      )
+   
     }   
+
+}
+
+const mapStateToProps = state => {
+    return {
+        languages: state.languages
+    }
 }
 
 
-export default Home;
+export default connect(mapStateToProps, {fetchLanguages}) (Home);

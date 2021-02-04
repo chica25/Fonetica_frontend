@@ -7,6 +7,6 @@ export const languageReducer = (state = initialState, action) => {
         case "SET_LANGUAGES":
             return {...state, languages: action.payload}
         default:
-          return state
+          return state;
     }
 }

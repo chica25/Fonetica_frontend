@@ -4,14 +4,14 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import {languageReducer} from './reducers/languageReducer';
 import logger from 'redux-logger'; 
+import {languageReducer} from './reducers/languageReducer';
 
-const store = createStore(languageReducer, compose(
-  applyMiddleware(thunk, logger),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-)
-ReactDOM.render(
+
+const store = createStore(languageReducer, compose(applyMiddleware(thunk, logger),
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
+
+  ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
