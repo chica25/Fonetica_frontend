@@ -7,7 +7,11 @@ function LanguageList(props) {
             <div className="language">
                 {props.languages.map(lang => {
                     return (
-                        <img src={lang.flag_image} />
+                        <div>
+                            <h3>{lang.language_name}</h3>
+                            <img src={lang.flag_image} />
+                            
+                        </div>
                     )
                 })}
             </div>

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 //you want to dispatch a thunk action in componentDidMount
 //to fetch list of lanugages from API and update app state with that list
 import LanguageList from './LanguageList'
-import { fetchLanguages } from '../actions/fetchLanguages.js'
+import { fetchLanguages } from '../actions/actionCreator.js'
 import { connect } from 'react-redux';
 
 class Home extends Component {
