@@ -8,7 +8,6 @@ import { connect } from 'react-redux';
 
 class Home extends Component {
 
-
     componentDidMount() {
       this.props.fetchLanguages()
     }
