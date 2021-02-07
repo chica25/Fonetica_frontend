@@ -1,7 +1,7 @@
 import React from 'react';
 
-class InteractiveMaps extends React.Components {
+class InteractiveMaps extends React.Component {
 
 }
 
-export default InteractiveMaps
+export default InteractiveMaps;
