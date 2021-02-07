@@ -3,7 +3,7 @@ import React from 'react';
  function LanguagePhrase(){
     return (
         <div>
-            Phrases page
+           Start Practicing
         </div>
     )
 }

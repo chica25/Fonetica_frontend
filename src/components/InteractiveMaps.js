@@ -4,7 +4,7 @@ function InteractiveMaps() {
 
     return(
         <div>
-            <h2>Testing</h2>
+            <h3>Testing</h3>
         </div>
     )
 
