@@ -1,7 +1,20 @@
 import React from 'react';
 
-class Phrase extends React.Component {
+const Phrases = () => {
 
-}
 
-export default Phrase;
+// class Phrases extends React.Component {
+
+    // componentDidMount() {
+    //     // this.props.fetchLanguages()
+    //   }
+  
+
+       return(
+           <div className="phrases">
+              <h1>Start Practing</h1>
+            </div>
+        )
+}    
+
+export default Phrases;
