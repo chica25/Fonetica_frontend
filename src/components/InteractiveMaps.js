@@ -1,6 +1,12 @@
 import React from 'react';
 
-class InteractiveMaps extends React.Component {
+function InteractiveMaps() {
+
+    return(
+        <div>
+            <h2>Testing</h2>
+        </div>
+    )
 
 }
 
