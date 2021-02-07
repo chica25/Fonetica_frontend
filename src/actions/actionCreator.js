@@ -11,3 +11,4 @@ export const fetchLanguages = () => {
                 payload: languages }))
            }
     }
+

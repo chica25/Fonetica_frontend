@@ -24,6 +24,10 @@
   color: white;
 }
 
+flag-img {
+  max-width: 400px;
+}
+
 .App-link {
   color: #61dafb;
 }
