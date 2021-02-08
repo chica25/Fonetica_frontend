@@ -1,4 +1,4 @@
-
+// languages index action
 export const fetchLanguages = () => {
     return dispatch => {
         fetch('http://localhost:3000/api/v1/languages')
@@ -9,6 +9,8 @@ export const fetchLanguages = () => {
            }
     }
 
+    // phrases index action
+
     export const fetchLanguagePhrases = () => {
         return dispatch => {
             fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`)
@@ -16,5 +18,18 @@ export const fetchLanguages = () => {
             .then(languageId => dispatch({
                 type: 'SET_PHRASES_BY_LANGUAGE',
                 payload: languageId }))
+        }
+    }
+
+
+// phrases post action
+
+export const fetchNewPhrase = (newData => {
+    return dispatch => {
+        const phrase = { phrase: newData }
+        fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`, { method: 'POST', body: JSON.stringify()})
+        .then(response => response.json())
+        .then((phrases) => 
+            dispatch({ type: "NEW_PHRASE" , payload: phrases })
         }
     }
