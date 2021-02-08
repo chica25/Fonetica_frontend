@@ -1,6 +1,3 @@
-// set all the fetch functions on this files 
-
-//FetchLanguages..etc
 
 export const fetchLanguages = () => {
     return dispatch => {
