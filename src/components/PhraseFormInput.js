@@ -8,7 +8,10 @@ class PhraseFormInput extends React.Component {
 
     submitForm = event => {
         event.preventDefault()
-        console.log("new phrase")
+        // console.log("new phrase")
+        this.setState({
+            phrase: ""
+        })
 
     }
 
@@ -17,7 +20,8 @@ class PhraseFormInput extends React.Component {
             <div>
                 <h2>Start praticing</h2>
                 <form onSubmit={this.submitForm}>
-                    Enter Phrase<input type="text" value={this.state.phrase} />
+                    Enter Phrase: <input onChange={event => this.setState({phrase: event.target.value})}
+                    type="text" value={this.state.phrase} />
                     <input type="submit" value="Create New phrase">Create New phrase</input>
                 </form>
             </div>
