@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PhrasesByLanguage from './PhrasesByLanguage.js';
-import { fetchLanguagePhrases } from '..redux/actions/actionsCreator.js';
+import { fetchLanguagePhrases } from './redux/actions/actionsCreator.js';
 import { connect } from 'react-redux.js';
 
 class Phrases extends Component {

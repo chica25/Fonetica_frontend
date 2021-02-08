@@ -1,8 +1,9 @@
-const initialState = {
-    practicePhrase: []
-}
+// const initialState = {
+//     practicePhrase: []
+// }
 
-export const PracticePhraseReducer = (state = initialState, action) => {
+export function PracticePhraseReducer(state = {practicePhrase: []}, action) => {
+   
     switch(action.type){
         case "PRACTICE_PHRASE":
             return {...state, practicePhrase: [...state.practicePhrase, action.payload] }
@@ -11,3 +12,5 @@ export const PracticePhraseReducer = (state = initialState, action) => {
     }
 }
 
+
+// export default function PracticePhraseReducer(state = [], action) => {
