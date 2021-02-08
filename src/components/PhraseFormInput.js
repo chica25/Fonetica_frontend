@@ -9,6 +9,7 @@ class PhraseFormInput extends React.Component {
 
     submitForm = event => {
         event.preventDefault()
+        this.props.createNewForm(this.state)
         // console.log("new phrase")
         this.setState({
             phrase: ""

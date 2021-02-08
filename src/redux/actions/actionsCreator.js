@@ -25,10 +25,9 @@ export const fetchLanguages = () => {
 // phrases post action
 export const fetchNewPhrase = (newData) => {
     return dispatch => {
-        const phrase = { phrase: newData }
         fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`, { 
             method: 'POST',
-            body: JSON.stringify(phrase),
+            body: JSON.stringify({ phrase: newData }),
         })
             .then(response => response.json())
                 .then(phrases => dispatch({
