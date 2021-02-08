@@ -12,13 +12,13 @@ class Phrases extends Component {
           render(){
                 return(
                     <>
-                        <h2>Phrases page</h2>
+                     <h2>Phrases page</h2>
                         <PhrasesByLanguage />
                         <PhraseFormInput />
                     </>
                 )
-        }
- }
+    }
+}
 
 
 export default connect(null, { fetchLanguagePhrases: fetchLanguagePhrases })(Phrases);

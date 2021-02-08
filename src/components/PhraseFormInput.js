@@ -1,5 +1,6 @@
 import React from 'react';
-// import { connect } from 'react-redux'
+import { fetchNewPhrase } from "../redux/actions/actionsCreator";
+ import { connect } from 'react-redux'
 
 class PhraseFormInput extends React.Component {
     state = {
