@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import LanguageList from './components/LanguageList';
-import LanguagePhrases from './components/LanguagePhrases';
+import PhrasesByLanguageId from './components/PhrasesByLanguageId';
 import InteractiveMaps from './components/InteractiveMaps';
 import NavBar from './components/NavBar';
 
@@ -14,7 +14,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/home" component={Home}/>
           <Route path="/languages" component={LanguageList}/>
-          <Route path="/languagephrases" component={LanguagePhrases}/>
+          <Route path="/languagephrases" component={PhrasesByLanguageId}/>
           <Route path="/interactivemaps" component={InteractiveMaps}/>
         </Switch>
        </Router>
