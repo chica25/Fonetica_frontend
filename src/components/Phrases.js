@@ -8,14 +8,14 @@ class Phrases extends Component {
     componentDidMount(){
       this.props.fetchLanguagePhrases()
     }
-          render(){
-                return(
-                    <>
-                     <h2>Phrases page</h2>
+        render(){
+            return(
+                <>
+                    <h2>Phrases page</h2>
                     <PhrasesByLanguage />
-                    </>
-                )
-            }
+                </>
+            )
+        }
 }
 
-export default connect(null, { fetchNewPhrase: fetchNewPhrase })(PhraseFormInput);
+export default connect(null, { fetchLanguagePhrases: fetchLanguagePhrases })(Phrases);

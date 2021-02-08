@@ -11,15 +11,15 @@ export const fetchLanguages = () => {
 
     // phrases index action
 
-    export const fetchLanguagePhrases = () => {
-        return dispatch => {
-            fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`)
-            .then(response => response.json())
-                .then(languageId => dispatch({
-                    type: 'SET_PHRASES_BY_LANGUAGE',
-                    payload: languageId }))
-            }
-    }
+export const fetchLanguagePhrases = () => {
+    return dispatch => {
+        fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`)
+        .then(response => response.json())
+            .then(languageId => dispatch({
+                type: 'SET_PHRASES_BY_LANGUAGE',
+                payload: languageId }))
+        }
+}
 
 
 // phrases post action
@@ -27,6 +27,9 @@ export const fetchNewPhrase = (newData) => {
     return dispatch => {
         fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`, { 
             method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify({ phrase: newData }),
         })
             .then(response => response.json())
