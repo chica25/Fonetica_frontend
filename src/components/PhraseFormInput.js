@@ -30,4 +30,4 @@ class PhraseFormInput extends React.Component {
     }
 }
 
-export default PhraseFormInput;
+export default connect(null, { fetchNewPhrase: fetchNewPhrase })(PhraseFormInput);
