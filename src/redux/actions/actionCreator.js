@@ -17,7 +17,7 @@ export const fetchLanguages = () => {
             fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`)
             .then(response => response.json())
             .then(languageId => dispatch({
-                type: 'SET_PHRASES_PER_LANGUAGE',
+                type: 'SET_PHRASES_BY_LANGUAGE',
                 payload: languageId }))
         }
     }
