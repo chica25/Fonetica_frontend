@@ -1,7 +1,5 @@
 const initialState = { 
     phrases: [],
-    english_language: {},
-    foreign_language: {}
 }
 
 export const LanguagePhraseReducer = ( state = initialState, action) => {
