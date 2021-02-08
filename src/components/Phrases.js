@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { fetchLanguagePhrases } from '../actions/actionCreator.js'
+import { fetchLanguagePhrases } from './redux/actions/actionCreator.js';
+import PhrasesByLanguage from '../PhrasesByLanguage.js';
 import { connect } from 'react-redux';
-import PhrasesByLanguage from './PhrasesByLanguage.js';
 
 class Phrases extends Component {
 
@@ -13,14 +13,12 @@ class Phrases extends Component {
      return(
          <>
             <h2>Phrases page</h2>
-            < PhrasesByLanguage />
+            <PhrasesByLanguage />
          </>
      )
    
-    }   
+    }
 
 }
-
-
 
 export default connect(null, { fetchLanguagePhrases: fetchLanguagePhrases })(Phrases);

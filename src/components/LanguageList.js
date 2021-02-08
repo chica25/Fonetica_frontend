@@ -30,8 +30,6 @@ const LanguageList = (props) => {
 
 
 const mapStateToProps = ({ languages }) => ({ languages })
-    
+    // return { languages: languages }
 
 export default connect(mapStateToProps)(LanguageList);
-
-
