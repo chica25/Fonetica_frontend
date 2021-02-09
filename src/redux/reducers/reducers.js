@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
+import { languageReducer } from './languageReducer.js';
+import { phraseReducer } from './phraseReducer.js';;
 
-const rootReducer = combineReducers({
-    languages: languagereducers,
-    phrases: phraseReducer
+export const rootReducer = combineReducers({
+    language: languageReducer,
+    phrase: phraseReducer
 })
 
-export default rootReducer;

@@ -15,7 +15,7 @@ class Phrases extends Component {
                     <PhrasesByLanguage />
                 </>
             )
-        }
+    }
 }
 
 export default connect(null, { fetchLanguagePhrases: fetchLanguagePhrases })(Phrases);
