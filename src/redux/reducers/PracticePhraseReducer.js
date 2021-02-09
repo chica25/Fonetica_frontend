@@ -1,6 +1,3 @@
-// const initialState = {
-//     practicePhrase: []
-// }
 
 export function PracticePhraseReducer(state = {practicePhrase: []}, action) => {
    
@@ -11,6 +8,3 @@ export function PracticePhraseReducer(state = {practicePhrase: []}, action) => {
           return state;
     }
 }
-
-
-// export default function PracticePhraseReducer(state = [], action) => {
