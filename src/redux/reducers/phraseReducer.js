@@ -1,8 +1,7 @@
 
 
 export function LanguagePhraseReducer(state = { english_language: [], foreign_language: []}, action) => {
-       
-    switch(action.type) {
+       switch(action.type) {
 
             case "SET_ENGLISH_LANGUAGE": 
                 return {
@@ -14,6 +13,17 @@ export function LanguagePhraseReducer(state = { english_language: [], foreign_la
 
                 default:
                     return state;
+
+        //     export function PracticePhraseReducer(state = {practicePhrase: []}, action) => {
+   
+        //             switch(action.type){
+        //                 case "PRACTICE_PHRASE":
+        //                     return {...state, practicePhrase: [...state.practicePhrase, action.payload] }
+        //                 default:
+        //                     return state;
+        //                 }
+        //         }
+                    
     
             
-        }
+        // }
