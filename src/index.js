@@ -5,11 +5,12 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger'; 
-import { rootReducer } from './redux/reducers/reducers';
+// import { rootReducer } from './reducers/index';
+import { languageReducer } from './reducers/languageReducer';
 // import { PracticePhraseReducer } from './redux/reducers/PracticePhraseReducer';
 
-
-const store = createStore(rootReducer, compose(applyMiddleware(thunk, logger),
+// add rootReducer after including all reducers
+const store = createStore(languageReducer, compose(applyMiddleware(thunk, logger),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
 
   ReactDOM.render(

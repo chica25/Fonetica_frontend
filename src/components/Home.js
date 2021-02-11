@@ -3,25 +3,32 @@ import React, { Component } from 'react';
 //you want to dispatch a thunk action in componentDidMount
 //to fetch list of lanugages from API and update app state with that list
 import LanguageList from './LanguageList';
-import { fetchLanguages } from '../redux/actions/actionsCreator.js';
+import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
 
 class Home extends Component {
 
     componentDidMount() {
-      this.props.fetchLanguages()
+        // console.log("hello")
+      this.props.fetchLanguages();
+    }
+
+    handleClick = () => {
+        
     }
 
  render() {
+    //  console.log("HELLO!!!", this.props)
      return(
          <>
             <h1>Home page</h1>
-            <LanguageList />
+            <LanguageList/>
+            <button onClick={this.handleClick}>button</button>
          </>
      )
    
     }   
-
+    // <Questions questions={this.props.questions}/>
 }
 
 

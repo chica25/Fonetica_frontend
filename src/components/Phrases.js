@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import PhrasesByLanguage from './PhrasesByLanguage.js';
-import { fetchLanguagePhrases } from '../redux/actions/actionsCreators.js';
-import { connect } from 'react-redux';
+// import React, { Component } from 'react';
+// import PhrasesByLanguage from './PhrasesByLanguage.js';
+// import { fetchLanguagePhrases } from '../actions/actionsCreator.js';
+// import { connect } from 'react-redux';
 
-class Phrases extends Component {
+// class Phrases extends Component {
 
-    componentDidMount(){
-      this.props.fetchLanguagePhrases()
-    }
-        render(){
-            return(
-                <>
-                    <h2>Phrases page</h2>
-                    <PhrasesByLanguage />
-                </>
-            )
-    }
-}
+//     componentDidMount(){
+//       this.props.fetchLanguagePhrases()
+//     }
+//         render(){
+//             return(
+//                 <>
+//                     <h2>Phrases page</h2>
+//                     <PhrasesByLanguage />
+//                 </>
+//             )
+//     }
+// }
 
-export default connect(null, { fetchLanguagePhrases: fetchLanguagePhrases })(Phrases);
+// export default connect(null, { fetchLanguagePhrases: fetchLanguagePhrases })(Phrases);

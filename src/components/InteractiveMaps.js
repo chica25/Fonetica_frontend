@@ -1,13 +1,13 @@
-import React from 'react';
+// import React from 'react';
 
-function InteractiveMaps() {
+// function InteractiveMaps() {
 
-    return(
-        <div>
-            <h3>Testing</h3>
-        </div>
-    )
+//     return(
+//         <div>
+//             <h3>Testing</h3>
+//         </div>
+//     )
 
-}
+// }
 
-export default InteractiveMaps;
+// export default InteractiveMaps;
