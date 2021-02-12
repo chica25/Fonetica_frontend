@@ -14,7 +14,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/home" component={Home}/>
               <Route path="/languages" component={LanguageList}/>
-              {/* <Route path="/phrases/id/language" component={Phrases}/> */}
+              <Route path="/languagephrases" component={PhraseContainer}/>
               <Route path="/phrases" component={PhraseContainer}/>
               <Route path="/interactivemaps" component={InteractiveMaps}/>
             </Switch>
