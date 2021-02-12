@@ -11,7 +11,7 @@ class Home extends Component {
     componentDidMount() {
         // console.log("hello")
       this.props.fetchLanguages();
-      console.log(this)
+    //   console.log(this)
     }
 
     // handleClick = () => {

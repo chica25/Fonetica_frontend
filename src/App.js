@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home'; import LanguageList from './components/LanguageList';
 // import PhrasesByLanguage from './components/PhrasesByLanguage';
 import PhraseContainer from './components/PhraseContainer';
@@ -14,7 +14,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/home" component={Home}/>
               <Route path="/languages" component={LanguageList}/>
-              <Route path="/languagephrases" component={PhraseContainer}/>
+              {/* <Route path="/language/phrases" component={PhraseContainer}/> */}
               <Route path="/phrases" component={PhraseContainer}/>
               <Route path="/interactivemaps" component={InteractiveMaps}/>
             </Switch>

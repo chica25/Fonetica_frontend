@@ -14,6 +14,7 @@ import {fetchLanguagePhrases } from '../actions/actionsCreator.js';
         // debugger
         e.preventDefault()
         this.props.fetchLanguagePhrases(e.target.id)
+        this.props.languages.push("/path/to/phrases");
         //when user clicks on a flag 
         // it will fetch the phrases of the language
         // connect the info to the redux store

@@ -17,7 +17,7 @@ const PhrasesByLanguage = (props) => {
 }
 
 
-const mapStateToProps = ({ phrases }) => ({ phrases });
+const mapStateToProps = ({ languages }) => ({ languages });
     
 
 export default connect(mapStateToProps)(PhrasesByLanguage);
