@@ -11,11 +11,12 @@ class Home extends Component {
     componentDidMount() {
         // console.log("hello")
       this.props.fetchLanguages();
+      console.log(this)
     }
 
-    handleClick = () => {
+    // handleClick = () => {
         
-    }
+    // }
 
  render() {
     //  console.log("HELLO!!!", this.props)
@@ -23,7 +24,7 @@ class Home extends Component {
          <>
             <h1>Home page</h1>
             <LanguageList/>
-            <button onClick={this.handleClick}>button</button>
+            {/* <button onClick={this.handleClick}>start learning</button> */}
          </>
      )
    
@@ -33,4 +34,4 @@ class Home extends Component {
 
 
 
-export default connect(null, { fetchLanguages: fetchLanguages })(Home);
+export default connect(null, { fetchLanguages })(Home);
