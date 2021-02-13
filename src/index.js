@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger'; 
+// import { languageReducer } from './reducers/languageReducer';
 import { languageReducer } from './reducers/languageReducer';
 // import { PracticePhraseReducer } from './redux/reducers/PracticePhraseReducer';
 

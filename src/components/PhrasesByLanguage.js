@@ -1,14 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-// const languages = this.props.languages.map((lang, i) =>  <div key={i}> <h3>{lang.language_name}</h3>
-// <button onClick={this.handleClick}><img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/></button></div>)
-// return(
-
 const PhrasesByLanguage = (props) => {
+
+
+      
+//     const languages = this.props.languages.map((lang, i) =>  <div key={i}> <h3>{lang.language_name}</h3>
+//     <Link to={`/phrase/${i}`}>
+//    <button onClick={this.handleClick}><img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/></button></Link></div>)
+//     return(
+//         <div className="language">
+//                 {languages}
+//             </div>
+
+    const phrases = props.phrases.map(phrase => <div key={phrase.id}> {phrase.english_language} {phrase.foreign_language}</div>)
+
     return (
         <div>
-            {props.phrases.map(phrase => <div key={phrase.id}> {phrase.english_language} {phrase.foreign_language}</div>)}
+            {phrases}
+            {/* {props.phrases.map(phrase => <div key={phrase.id}> {phrase.english_language} {phrase.foreign_language}</div>)} */}
         </div>
         )
     }

@@ -4,7 +4,7 @@ export const fetchLanguages = () => {
         fetch('http://localhost:3000/api/v1/languages')
             .then(response => response.json())
                 .then(languages => dispatch({
-                    type: 'SET_LANGUAGES',
+                    type: 'GET_LANGUAGES',
                     payload: languages }))
             }
     }
@@ -19,7 +19,7 @@ export const fetchLanguagePhrases = (languageId) => {
                 .then(phrases => {
                     // debugger
                     dispatch({
-                    type: 'SET_PHRASES',
+                    type: 'GET_PHRASES',
                     payload: phrases })})     
             }
     }

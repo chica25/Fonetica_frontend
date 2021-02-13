@@ -1,16 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
+
     return (
+        <nav className= "nav-wrapper">
         <div>
             <ul>
-                <li><Link to="/home" style={{color: "blue"}}>Home</Link></li>
-                <li><Link to="/languages">Languages</Link></li>
-                <li><Link to="/phrases">Phrases</Link></li>
-                <li><Link to="/interactivemaps">Interactive Maps</Link></li>
+                <li><NavLink to="/home" style={{color: "blue"}}>Home</NavLink></li>
+                <li><NavLink to="/languages">Languages</NavLink></li>
+                <li><NavLink to="/language/phrases">Phrases</NavLink></li>
+                <li><NavLink to="/interactivemaps">Interactive Maps</NavLink></li>
             </ul>
         </div>
+    </nav>
     )
 }
 
