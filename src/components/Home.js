@@ -24,7 +24,6 @@ class Home extends Component {
          <>
             <h1>Home page</h1>
             <LanguageList/>
-            {/* <button onClick={this.handleClick}>start learning</button> */}
          </>
      )
    
