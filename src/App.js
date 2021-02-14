@@ -14,9 +14,10 @@ class App extends React.Component {
        <NavBar/>
           <Switch>
             <Route exact path="/home" component={Home}/>
+            <Route exact path="/languages" component={LanguageList}/>
             <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
             <Route exact path="/interactivemaps" component={InteractiveMaps}/>
-            {/* <Route exact path="/practice" component={PhraseFormInput}/> */}
+            <Route exact path="/phrases/new" component={PhraseFormInput}/>
             
           </Switch>
      </Router>

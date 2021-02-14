@@ -22,28 +22,29 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PhrasesByLanguage from './PhrasesByLanguage'
+import LanguageList from './LanguageList';
 
 
 class PhraseContainer extends Component {
 
 
         render(){
+            // debugger
             // console.log((this.props.phrases).map(phrase => phrase["english_phrase"]
-            this.props.phrases.map(phrase => phrase["english_phrase"] 
-                )
+            // this.props.phrases.map(phrase => phrase)     
             return(
                 <>
-                    <h2>Phrases</h2>
-                    <PhrasesByLanguage
-                    phrases={this.props.phrases}
-                    />
-                </>
+                 <PhrasesByLanguage 
+                phrases={this.props.phrases}/>
+               </>
             )
+            
          }
 }
 
 const mapStateToProps = (state) => ({ 
-    phrases: state.phrases 
+    phrases: state.phrases
+    // languages: state.languages
 })
 
 export default connect(mapStateToProps)(PhraseContainer);

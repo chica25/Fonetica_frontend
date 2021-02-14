@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 // import { fetchNewPhrase } from "../actions/actionsCreator";
 //  import { connect } from 'react-redux'
 
@@ -30,4 +30,5 @@
 //     }
 // }
 
+// export default PhraseFormInput;
 // export default connect(null, { fetchNewPhrase: fetchNewPhrase })(PhraseFormInput);

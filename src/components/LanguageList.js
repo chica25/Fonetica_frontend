@@ -4,6 +4,7 @@ import {fetchLanguagePhrases } from '../actions/actionsCreator.js';
 // import { Redirect } from 'react-router';
 // import { withRouter } from "react-router";
 import { Link } from 'react-router-dom';
+import PhraseFormInput from './PhraseFormInput'
 
 
     class LanguageList extends React.Component {
@@ -32,8 +33,11 @@ import { Link } from 'react-router-dom';
                 </div>)
                 //  debugger
             return(
+               
                 <div className="language">
                     {languages}
+                    <h2>Languages</h2>
+                    <PhraseFormInput />
                 </div>
             )
         }

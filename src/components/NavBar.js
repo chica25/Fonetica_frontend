@@ -8,9 +8,9 @@ function NavBar() {
         <div>
             <ul>
                 <li><Link to="/home">Home</Link></li>
+                <li><Link to="/languages">Languages</Link></li>
+                {/* <li><Link to={`/languages"/phrases/{:id}`}>Languages</Link></li> */}
                 <li><Link to="/interactivemaps">Interactive Maps</Link></li>
-                <li><Link to={`/languages/phrases/{:id}`}>Start practicing</Link></li>
-                
             </ul>
         </div>
     </nav>
