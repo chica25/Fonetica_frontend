@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
 import LanguageList from './components/LanguageList';
-// import PhrasesByLanguage from './components/PhrasesByLanguage';
 import PhraseContainer from './components/PhraseContainer';
 import PhraseForm from './components/PhraseForm';
 import InteractiveMaps from './components/InteractiveMaps';
@@ -14,13 +13,12 @@ class App extends React.Component {
      <Router>
        <NavBar/>
           <Switch>
-            <Route exact path="/home" component={Home}/>
-            <Route exact path="/languages" component={LanguageList}/>
-            <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
-            <Route exact path="/interactivemaps" component={InteractiveMaps}/>
-            <Route exact path="/phrases/new" component={PhraseForm}/>
-            
-          </Switch>
+              <Route exact path="/home" component={Home}/>
+              <Route exact path="/languages" component={LanguageList}/>
+              <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
+              <Route exact path="/interactivemaps" component={InteractiveMaps}/>
+              <Route exact path="/phrases/new" component={PhraseForm}/>
+            </Switch>
      </Router>
     );
   }

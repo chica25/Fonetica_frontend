@@ -5,15 +5,15 @@ import PhrasesByLanguage from './PhrasesByLanguage'
 class PhraseContainer extends Component {
 
 
-        render(){ 
-            return(
-                <>
-                 <PhrasesByLanguage 
+    render(){ 
+        return(
+            <>
+                <PhrasesByLanguage 
                 phrases={this.props.phrases}/>
-               </>
-            )
+            </>
+        )
             
-         }
+    }
 }
 
 const mapStateToProps = (state) => ({ 

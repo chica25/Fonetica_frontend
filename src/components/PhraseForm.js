@@ -5,7 +5,7 @@ import React from 'react';
 
 const PhraseForm = () => {
 
-    const onChange = () => {
+    const handleChange = () => {
         // preventDefault();
     }
 
@@ -13,12 +13,12 @@ const PhraseForm = () => {
         <div>
             <form>
             <label>Language Name:</label>
-                <input type="text" placeholder="Enter language name..." onClick={onChange} />
+                <input type="text" placeholder="Enter language name..." onClick={handleChange} />
             </form>
                 <br/>
             <form>
                 <label>Enter Phrase:</label>
-                <input type="text" placeholder="Enter phrase..." name="name" onClick={onChange}></input>
+                <input type="text" placeholder="Enter phrase..." name="name" onClick={handleChange}></input>
             </form>
         </div>
     )

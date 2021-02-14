@@ -28,7 +28,6 @@ class Home extends Component {
      )
    
     }   
-    // <Questions questions={this.props.questions}/>
 }
 
 

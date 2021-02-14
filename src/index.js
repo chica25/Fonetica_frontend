@@ -6,11 +6,11 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger'; 
 // import { languageReducer } from './reducers/languageReducer';
-import { languageReducer } from './reducers/languageReducer';
-// import { PracticePhraseReducer } from './redux/reducers/PracticePhraseReducer';
+import AllReducers from './reducers/AllReducers';
 
 // add rootReducer after including all reducers
-const store = createStore(languageReducer, compose(applyMiddleware(thunk, logger),
+
+const store = createStore(AllReducers, compose(applyMiddleware(thunk, logger),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()))
 
   ReactDOM.render(
@@ -19,3 +19,5 @@ const store = createStore(languageReducer, compose(applyMiddleware(thunk, logger
   </Provider>,
   document.getElementById('root')
 );
+
+
