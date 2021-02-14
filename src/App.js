@@ -9,19 +9,18 @@ import NavBar from './components/NavBar';
 
 class App extends React.Component {
   render(){
-      return (
-       <Router>
-         <NavBar/>
-            <Switch>
-              <Route exact path="/home" component={Home}/>
-              <Route exact path="/languages" component={LanguageList}/>
-              <Route path="languages/phrases/:id" component={PhraseContainer}/>
-              <Route path="/interactivemaps" component={InteractiveMaps}/>
-            </Switch>
-       </Router>
-      );
-    }
+    return (
+     <Router>
+       <NavBar/>
+          <Switch>
+            <Route path="/home" exact component={Home}/>
+            <Route path="/languages" exact component={LanguageList}/>
+            <Route path="/languages/phrases/:id" exact component={PhraseContainer}/>
+            <Route path="/interactivemaps" exact component={InteractiveMaps}/>
+          </Switch>
+     </Router>
+    );
+  }
 }
- 
 
 export default (App);

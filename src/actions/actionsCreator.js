@@ -16,11 +16,11 @@ export const fetchLanguagePhrases = (languageId) => {
         // debugger
         fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`)
             .then(response => response.json())
-                .then(phrases => {
+                .then(phrases => dispatch({
                     // debugger
-                    dispatch({
+                    // dispatch({
                     type: 'GET_PHRASES',
-                    payload: phrases })})     
+                    payload: phrases }))     
             }
     }
     

@@ -34,18 +34,21 @@ import { Link } from 'react-router-dom';
         }
         
         render(){
-    //    
-        const languages = this.props.languages.map((lang, i) =>  <div key={i}> <h3>{lang.language_name}</h3>
-        <Link to={`/phrase/${i}`}>
-       <button onClick={this.handleClick}><img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/></button></Link></div>)
-        return(
-            <div className="language">
+            const languages = this.props.languages.map((lang, i) => 
+                <div key={i}> <h3>{lang.language_name}</h3>
+                    <Link to={`/languages/phrases/${i}`}>
+                        <button onClick={this.handleClick}>
+                            <img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/>
+                        </button>
+                    </Link>
+                </div>)
+                //  debugger
+            return(
+                <div className="language">
                     {languages}
                 </div>
-               
             )
         }
-        
     }
 
 const mapStateToProps = ({ languages }) => ({ languages })

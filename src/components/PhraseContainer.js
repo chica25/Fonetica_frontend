@@ -10,7 +10,7 @@ class PhraseContainer extends Component {
             return(
                 <>
                     <h2>Phrases page</h2>
-                    {/* <PhrasesByLanguage/> */}
+                    <PhrasesByLanguage/>
                 </>
             )
          }
