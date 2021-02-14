@@ -29,7 +29,7 @@ class PhraseContainer extends Component {
 
         render(){
             // console.log((this.props.phrases).map(phrase => phrase["english_phrase"]
-            this.props.phrases.map(phrase => phrase["english_phrase"]
+            this.props.phrases.map(phrase => phrase["english_phrase"] 
                 )
             return(
                 <>

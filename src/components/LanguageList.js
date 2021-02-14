@@ -13,7 +13,6 @@ import { Link } from 'react-router-dom';
         // e.preventDefault()
         this.props.fetchLanguagePhrases(e.target.id)
         // debugger
-
             // return <Redirect to="/phrases/{e.target.id}" />
         //when user clicks on a flag 
         // it will fetch the phrases of the language
@@ -25,7 +24,7 @@ import { Link } from 'react-router-dom';
         render(){
             const languages = this.props.languages.map((lang, i) => 
                 <div key={i}> <h3>{lang.language_name}</h3>
-                    <Link to={`/languages/phrases/${i}`}>
+                    <Link to={`/languages/phrases/${lang.language_name}`}>
                         <button onClick={this.handleClick}>
                             <img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/>
                         </button>
