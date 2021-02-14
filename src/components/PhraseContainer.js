@@ -41,6 +41,7 @@ class PhraseContainer extends Component {
             )
          }
 }
+
 const mapStateToProps = (state) => ({ 
     phrases: state.phrases 
 })

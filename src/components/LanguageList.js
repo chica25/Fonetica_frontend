@@ -8,14 +8,6 @@ import { Link } from 'react-router-dom';
 
     class LanguageList extends React.Component {
 
-        //   state = {
-        //     languages: ""
-
-        // }
-
-        // path "/phrases/1"
-        // path "/phrases/:id"
-
         handleClick = (e) => {     
         // debugger
         // e.preventDefault()
