@@ -1,10 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {fetchLanguagePhrases } from '../actions/actionsCreator.js';
-// import { Redirect } from 'react-router';
-// import { withRouter } from "react-router";
 import { Link } from 'react-router-dom';
-import PhraseFormInput from './PhraseFormInput'
+// import PhraseFormInput from './PhraseFormInput'
 
 
     class LanguageList extends React.Component {
