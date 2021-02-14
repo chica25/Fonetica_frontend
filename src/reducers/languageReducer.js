@@ -1,6 +1,10 @@
 const initialState = {
     languages: [],
-    phrases: []
+    phrases: [],
+    createPhrase: {
+        name: "",
+        phrase: ""
+    }
    
 }
 
@@ -12,9 +16,11 @@ export const languageReducer = (state = initialState, action) => {
         case 'GET_PHRASES': 
             // console.log('SET_PHRASES')
                 return {...state, phrases: action.payload}
-        // case 'CREATE_PHRASE': 
-        //     return [action.payload ]
-        
+        case 'NEW_PHRASE':
+            return action.payload 
+        case 'RESTART_NEW_PHRASE':
+        //  console.log('RESTART_NEW_PHRASE')
+            return initialState
         default:
           return state;
     }

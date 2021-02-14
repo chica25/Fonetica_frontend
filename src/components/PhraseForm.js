@@ -13,12 +13,12 @@ const PhraseForm = () => {
         <div>
             <form>
             <label>Language Name:</label>
-                <input type="text" placeholder="Enter Language name..." onClick={onChange} />
+                <input type="text" placeholder="Enter language name..." onClick={onChange} />
             </form>
                 <br/>
             <form>
                 <label>Enter Phrase:</label>
-                    <input textarea="comment" placeholder="Enter new phrase..." onClick={onChange} />
+                <input type="text" placeholder="Enter phrase..." name="name" onClick={onChange}></input>
             </form>
         </div>
     )
