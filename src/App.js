@@ -4,6 +4,7 @@ import Home from './components/Home';
 import LanguageList from './components/LanguageList';
 // import PhrasesByLanguage from './components/PhrasesByLanguage';
 import PhraseContainer from './components/PhraseContainer';
+import PhraseFormInput from './components/PhraseFormInput';
 import InteractiveMaps from './components/InteractiveMaps';
 import NavBar from './components/NavBar';
 

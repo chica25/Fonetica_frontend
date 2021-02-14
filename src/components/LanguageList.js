@@ -37,7 +37,7 @@ import PhraseFormInput from './PhraseFormInput'
                 <div className="language">
                     {languages}
                     <h2>Languages</h2>
-                    <PhraseFormInput />
+                    {/* <PhraseFormInput /> */}
                 </div>
             )
         }

@@ -2,7 +2,7 @@ import React from 'react';
 // import { fetchNewPhrase } from "../actions/actionsCreator";
 //  import { connect } from 'react-redux'
 
-// class PhraseFormInput extends React.Component {
+class PhraseFormInput extends React.Component {
 //     state = {
 //         phrase: ""
 //     }
@@ -28,7 +28,7 @@ import React from 'react';
 //             </div>
 //         )
 //     }
-// }
+}
 
-// export default PhraseFormInput;
+export default PhraseFormInput;
 // export default connect(null, { fetchNewPhrase: fetchNewPhrase })(PhraseFormInput);
