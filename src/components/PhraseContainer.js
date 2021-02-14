@@ -33,9 +33,9 @@ class PhraseContainer extends Component {
                 )
             return(
                 <>
-                    <h2>Phrases page</h2>
+                    <h2>Phrases</h2>
                     <PhrasesByLanguage
-                        phrases={this.props.phrases}
+                    phrases={this.props.phrases}
                     />
                 </>
             )

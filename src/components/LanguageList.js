@@ -38,7 +38,14 @@ import { Link } from 'react-router-dom';
             )
         }
     }
+    // const mapStateToProps = (state) => ({ 
+    //     phrases: state.phrases 
+    // })
+    
+    // export default connect(mapStateToProps)(PhraseContainer);
 
-const mapStateToProps = ({ languages }) => ({ languages })
+const mapStateToProps = (state) => ({
+    languages: state.languages
+}) 
 
 export default connect(mapStateToProps, {fetchLanguagePhrases})(LanguageList);
