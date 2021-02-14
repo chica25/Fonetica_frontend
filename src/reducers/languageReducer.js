@@ -1,5 +1,6 @@
 const initialState = {
-    languages: []
+    languages: [],
+   
 }
 
 export const languageReducer = (state = initialState, action) => {
