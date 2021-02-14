@@ -9,7 +9,7 @@ class PhraseContainer extends Component {
             // console.log
             return(
                 <>
-                    <h2>Phrases page</h2>
+                    <h1>Phrases page</h1>
                     <PhrasesByLanguage/>
                 </>
             )

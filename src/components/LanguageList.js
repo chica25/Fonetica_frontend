@@ -20,9 +20,6 @@ import { Link } from 'react-router-dom';
         // debugger
         // e.preventDefault()
         this.props.fetchLanguagePhrases(e.target.id)
-        // console.log(e.target)
-        // this.props.history.push("/phrases")
-        // withRouter.push("/phrases")
         // debugger
 
             // return <Redirect to="/phrases/{e.target.id}" />
