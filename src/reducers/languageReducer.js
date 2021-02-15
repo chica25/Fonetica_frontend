@@ -18,9 +18,7 @@ export const languageReducer = (state = initialState, action) => {
         
         case 'CREATE_PHRASES': 
             return action.payload 
-        
-        default:
-          return state;
-    }
+      
+        }
 }
 
