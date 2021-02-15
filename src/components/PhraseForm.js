@@ -1,6 +1,6 @@
 import React from 'react';
-// import { fetchNewPhrase } from "../actions/actionsCreator";
-//  import { connect } from 'react-redux'
+import { fetchNewPhrase } from "../actions/actionsCreator";
+ import { connect } from 'react-redux'
 
 
 const PhraseForm = () => {
@@ -27,4 +27,5 @@ const PhraseForm = () => {
 }
 
 export default PhraseForm;
-// export default connect(null, { fetchNewPhrase: fetchNewPhrase })(PhraseFormInput);
+
+// export default connect(null, { fetchNewPhrase: fetchNewPhrase })(PhraseForm);

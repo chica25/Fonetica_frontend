@@ -1,12 +1,8 @@
 const initialState = {
     languages: [],
     phrases: [],
-    createPhrase: {
-        name: "",
-        phrase: ""
+    createPhrase: []
     }
-   
-}
 
 const AllReducers = (state = initialState, action) => {
     switch(action.type){

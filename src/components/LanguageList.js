@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import {fetchLanguagePhrases } from '../actions/actionsCreator.js';
 import { Link } from 'react-router-dom';
-// import PhraseFormInput from './PhraseFormInput'
 
 
     class LanguageList extends React.Component {
@@ -29,22 +28,15 @@ import { Link } from 'react-router-dom';
                         </button>
                     </Link>
                 </div>)
-                //  debugger
             return(
                
                 <div className="language">
                     {languages}
                     <h2>Languages</h2>
-                    {/* <PhraseFormInput /> */}
                 </div>
             )
         }
     }
-    // const mapStateToProps = (state) => ({ 
-    //     phrases: state.phrases 
-    // })
-    
-    // export default connect(mapStateToProps)(PhraseContainer);
 
 const mapStateToProps = (state) => ({
     languages: state.languages
