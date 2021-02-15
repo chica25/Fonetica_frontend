@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PhrasesByLanguage from './PhrasesByLanguage'
+import PhraseForm from './PhraseForm'
 
 class PhraseContainer extends Component {
 
@@ -9,8 +10,11 @@ class PhraseContainer extends Component {
         return(
             <>
                 <PhrasesByLanguage 
-                phrases={this.props.phrases}/>
+                phrases={this.props.phrases}/>  
+                <br/> <br/>
+                  <PhraseForm />
             </>
+            
         )
             
     }

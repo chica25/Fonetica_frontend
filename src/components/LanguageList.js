@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {fetchLanguagePhrases } from '../actions/actionsCreator.js';
+import { fetchLanguagePhrases } from '../actions/actionsCreator.js';
 import { Link } from 'react-router-dom';
 
 

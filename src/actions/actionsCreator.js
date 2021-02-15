@@ -27,12 +27,31 @@ export const fetchLanguagePhrases = (languageId) => {
     }
     
 
-   
-
 // phrases post action
 
-export const fetchNewPhrase = (data) => {
+// export const fetchNewPhrase = (data) => {
+//     return dispatch => {
+//         fetch('http://localhost:3000/api/v1/phrases', {
+//             headers: {
+//                 'Content-Type': 'application/json',
+//                 'Accept': 'application/json'
+//             },
+//             method: 'POST',
+//             body: JSON.stringify(data)
+//         })
+//             .then(response => (response).json())
+//                 .then(newPhrases => dispatch({
+//                     type: 'CREATE_PHRASES',
+//                     payload: newPhrases }))
+//          }
+//     }
+
+export const fetchNewPhrase = (newPhrase) => {
     return dispatch => {
+        const data = {
+            id: newPhrase["language_id"],
+            language: newPhrase["foreign_phrase"],
+        };
         fetch('http://localhost:3000/api/v1/phrases', {
             headers: {
                 'Content-Type': 'application/json',
@@ -42,9 +61,10 @@ export const fetchNewPhrase = (data) => {
             body: JSON.stringify(data)
         })
             .then(response => (response).json())
-                .then(newPhrases => dispatch({
-                    type: 'CREATE_PHRASES',
-                    payload: newPhrases }))
+                .then(newPhrases => 
+                    dispatch({
+                      type: 'CREATE_PHRASES',
+                      payload: newPhrases 
+                    }))
          }
     }
-
