@@ -30,18 +30,20 @@ export const fetchLanguagePhrases = (languageId) => {
 
 // phrases post action
 
-export const fetchNewPhrase = (newData) => {
+export const fetchNewPhrase = (data) => {
+    // console.log(cata)
     return dispatch => {
-        fetch(`http://localhost:3000/api/v1/phrases`, { 
-            method: 'POST',
+        fetch('http://localhost:3000/api/v1/phrases', {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ phrase: newData }),
+            method: 'POST',
+            body: JSON.stringify(data),
         })
             .then(response => response.json())
                 .then(newPhrases => dispatch({
                     type: 'CREATE_PHRASES',
                     payload: newPhrases }))
-            }
+         }
     }
+
