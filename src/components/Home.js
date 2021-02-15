@@ -14,10 +14,6 @@ class Home extends Component {
     //   console.log(this)
     }
 
-    // handleClick = () => {
-        
-    // }
-
  render() {
     //  console.log("HELLO!!!", this.props)
      return(
@@ -29,7 +25,5 @@ class Home extends Component {
    
     }   
 }
-
-
 
 export default connect(null, { fetchLanguages })(Home);

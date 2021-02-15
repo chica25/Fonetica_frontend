@@ -1,22 +1,23 @@
 import React from 'react';
 import { fetchNewPhrase } from "../actions/actionsCreator";
- import { connect } from 'react-redux'
+import { connect } from 'react-redux'
 
 
-const PhraseForm = () => {
+const PhraseForm = ({languageName, enterPhrase, history}) => {
 
     const handleChange = (e) => {
-        e.preventDefault();  //
+         //
     }
 
     return(
         <div>
             <form>
             <label>Language Name:</label>
-                <input placeholder="name" type="text" name="languageName" placeholder="Enter language name..." onClick={handleChange} />
-                <br/>
+                <input placeholder="Enter language name..."type="text" name="languageName" onClick={handleChange} value={languageName}/>
+                <br/><br/>
                 <label>Enter Phrase:</label>
-                <input placeholder="phrase" type="text" name="enterPhrase" placeholder="Enter phrase..." name="name" onClick={handleChange} />
+                <input placeholder="Enter phrase..." type="text" name="enterPhrase" name="name" onClick={handleChange} value={enterPhrase}/>
+                <input type="submit" value="submit phrase" />
             </form>
         </div>
     )
@@ -24,6 +25,13 @@ const PhraseForm = () => {
 
 }
 
-export default PhraseForm;
+const mapStateToProps = (state) => ({
+    newPhrases: state.newPhrases 
+        // const { languageName, enterPhrase } = state.PhraseForm,
+        // // return { 
+        // languageName, 
+        // enterPhrase
+})
 
-// export default connect(null, { fetchNewPhrase: fetchNewPhrase })(PhraseForm);
+
+export default connect(mapStateToProps, { fetchNewPhrase })(PhraseForm);

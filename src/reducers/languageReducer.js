@@ -17,8 +17,11 @@ export const languageReducer = (state = initialState, action) => {
             return {...state, phrases: action.payload}
         
         case 'CREATE_PHRASES': 
-            return action.payload 
-      
+            // return action.payload 
+            return {...state, [action.formData.name]: action.formData.value}
+        
+            default:
+                return state;
         }
 }
 

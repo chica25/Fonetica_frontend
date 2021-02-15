@@ -12,6 +12,7 @@ export const fetchLanguages = () => {
     // phrases index action
 
 export const fetchLanguagePhrases = (languageId) => {
+   
     return dispatch => {
         // debugger
         fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`)
@@ -25,22 +26,22 @@ export const fetchLanguagePhrases = (languageId) => {
     }
     
 
-
+   
 
 // phrases post action
 
-// export const fetchNewPhrase = (newData) => {
-//     return dispatch => {
-//         fetch(`http://localhost:3000/api/v1/phrases`, { 
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//             },
-//             body: JSON.stringify({ phrase: newData }),
-//         })
-//             .then(response => response.json())
-//                 .then(phrases => dispatch({
-//                     type: 'CREATE_PHRASES',
-//                     payload: phrases }))
-//             }
-//     }
+export const fetchNewPhrase = (newData) => {
+    return dispatch => {
+        fetch(`http://localhost:3000/api/v1/phrases`, { 
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ phrase: newData }),
+        })
+            .then(response => response.json())
+                .then(newPhrases => dispatch({
+                    type: 'CREATE_PHRASES',
+                    payload: newPhrases }))
+            }
+    }
