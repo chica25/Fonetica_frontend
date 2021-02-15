@@ -9,9 +9,13 @@ const PhraseForm = ({languageName, enterPhrase, history}) => {
          //
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+    }
+
     return(
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
             <label>Language Name:</label>
                 <input placeholder="Enter language name..."type="text" name="languageName" onClick={handleChange} value={languageName}/>
                 <br/><br/>
