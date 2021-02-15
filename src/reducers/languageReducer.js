@@ -1,8 +1,11 @@
 const initialState = {
     languages: [],
     phrases: [],
-    createPhrase: []
+    createPhrase: {
+        languageName: "",
+        enterPhrase: ""
     }
+}
 
 export const languageReducer = (state = initialState, action) => {
     switch(action.type){

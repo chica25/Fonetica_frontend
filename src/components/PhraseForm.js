@@ -5,20 +5,20 @@ import { fetchNewPhrase } from "../actions/actionsCreator";
 
 const PhraseForm = () => {
 
-    const handleChange = () => {
-        // preventDefault();
+    const handleChange = (e) => {
+        e.preventDefault();
     }
 
     return(
         <div>
             <form>
             <label>Language Name:</label>
-                <input type="text" placeholder="Enter language name..." onClick={handleChange} />
+                <input type="text" name="languageName" placeholder="Enter language name..." onClick={handleChange} />
             </form>
                 <br/>
             <form>
                 <label>Enter Phrase:</label>
-                <input type="text" placeholder="Enter phrase..." name="name" onClick={handleChange}></input>
+                <input type="text" name="enterPhrase" placeholder="Enter phrase..." name="name" onClick={handleChange}></input>
             </form>
         </div>
     )
