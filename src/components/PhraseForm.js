@@ -1,5 +1,5 @@
 import React from 'react';
-import { fetchNewPhrase } from "../actions/actionsCreator";
+import { AddNewPhrase } from "../actions/actionsCreator";
 import { connect } from 'react-redux'
 
 
@@ -17,9 +17,11 @@ class PhraseForm extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        this.props.fetchNewPhrase({
-            // foreign_phrase: this.state.foreign_phrase,
-            // language_id: this.props.state
+        console.log("hello", this.state)
+        this.props.AddNewPhrase({
+            english_phrase: this.state.english_phrase,
+            foreign_phrase: this.state.foreign_phrase,
+            // language_id: this.state.language_id
             
             // newPhrase: this.state.foreign_phrase
         }) 
@@ -60,4 +62,4 @@ const mapStateToProps = (state) => {
 }   
 
 
-export default connect(mapStateToProps, { fetchNewPhrase })(PhraseForm);
+export default connect(mapStateToProps, { AddNewPhrase })(PhraseForm);
