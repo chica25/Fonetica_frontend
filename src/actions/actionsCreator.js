@@ -1,4 +1,5 @@
 // languages index action
+
 export const fetchLanguages = () => {
     return dispatch => {
         fetch('http://localhost:3000/api/v1/languages')
@@ -31,16 +32,16 @@ export const fetchLanguagePhrases = (languageId) => {
 // phrases post action
 
 export const fetchNewPhrase = (data) => {
-    // console.log(cata)
     return dispatch => {
         fetch('http://localhost:3000/api/v1/phrases', {
             headers: {
                 'Content-Type': 'application/json',
+                'Accept': 'application/json'
             },
             method: 'POST',
-            body: JSON.stringify(data),
+            body: JSON.stringify(data)
         })
-            .then(response => response.json())
+            .then(response => (response).json())
                 .then(newPhrases => dispatch({
                     type: 'CREATE_PHRASES',
                     payload: newPhrases }))
