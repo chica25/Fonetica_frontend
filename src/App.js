@@ -6,7 +6,6 @@ import PhraseContainer from './components/PhraseContainer';
 import PhraseForm from './components/PhraseForm';
 import InteractiveMaps from './components/InteractiveMaps';
 import NavBar from './components/NavBar';
-// import { connect } from 'react-redux';
 
 class App extends React.Component {
   render(){

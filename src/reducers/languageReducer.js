@@ -4,7 +4,7 @@ const initialState = {
     createPhrase: []
     }
 
-const AllReducers = (state = initialState, action) => {
+export const languageReducer = (state = initialState, action) => {
     switch(action.type){
         case 'GET_LANGUAGES':
             return {...state, languages: action.payload}
@@ -21,4 +21,3 @@ const AllReducers = (state = initialState, action) => {
     }
 }
 
-export default AllReducers;
