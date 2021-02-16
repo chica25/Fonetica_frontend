@@ -8,10 +8,7 @@ import { Link } from 'react-router-dom';
     class LanguageList extends React.Component {
 
         handleClick = (e) => {     
-        // debugger
-        // e.preventDefault()
         this.props.fetchLanguagePhrases(e.target.id)
-        // this.props.getId(e.target.id)
         // debugger
         //when user clicks on a flag 
         // it will fetch the phrases of the language
@@ -43,6 +40,7 @@ import { Link } from 'react-router-dom';
 const mapStateToProps = (state) => {
     return {
         languages: state.languages
+
     }
 }
 

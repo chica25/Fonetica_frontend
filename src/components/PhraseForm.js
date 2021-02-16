@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 class PhraseForm extends React.Component {
    state = {
     english_phrase: "",
-    foreign_phrase: "",
+    foreign_phrase: ""
    }
 
     handleChange = (e) => {
@@ -19,18 +19,12 @@ class PhraseForm extends React.Component {
     handleSubmit = (e) => {
         // debugger
         e.preventDefault();
-        console.log("hi", e.target)
+        // console.log("hi", e.target)
         // debugger
          this.props.AddNewPhrase({
             english_phrase: this.state.english_phrase,
             foreign_phrase: this.state.foreign_phrase
-            
-            // newPhrase: this.state.foreign_phrase
-        }) 
-        // this.setState({
-        //     foreign_phrase: "",
-        //     // NewPhrase: ""
-        // })
+        })
     }
 
         render(){
@@ -49,16 +43,17 @@ class PhraseForm extends React.Component {
                 </div>
             )
         }
-
-}
-
-const mapStateToProps = (state) => {
-    // newPhrases: state.newPhrases 
-        // const { languageName, enterPhrase, name} = state.PhraseForm
-        return { 
-            formData: state.PhraseForm
-        }
-}   
+    }
 
 
-export default connect(mapStateToProps, { AddNewPhrase })(PhraseForm);
+// const mapStateToProps = (state) => {
+
+//         return { 
+//             formData: state.PhraseForm
+//         }
+// }   
+
+
+// export default connect(mapStateToProps, { AddNewPhrase })(PhraseForm);
+
+export default connect(null, { AddNewPhrase })(PhraseForm);
