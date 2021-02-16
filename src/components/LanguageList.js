@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
         // debugger
         // e.preventDefault()
         this.props.fetchLanguagePhrases(e.target.id)
+        // console.log(e.target, "hi")
         // debugger
             // return <Redirect to="/phrases/{e.target.id}" />
         //when user clicks on a flag 
@@ -31,8 +32,9 @@ import { Link } from 'react-router-dom';
             return(
                
                 <div className="language">
+                     <h2>Languages</h2>
                     {languages}
-                    <h2>Languages</h2>
+                   
                 </div>
             )
         }
