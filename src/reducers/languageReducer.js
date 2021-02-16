@@ -15,7 +15,7 @@ export const languageReducer = (state = initialState, action) => {
             return {...state, phrases: action.payload}
         
         case 'CREATE_PHRASES': 
-            return [...state, action.payload]
+            return {...state, createPhrases: action.payload}
                
             default:
                 return state;

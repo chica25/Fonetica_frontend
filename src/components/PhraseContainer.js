@@ -9,8 +9,7 @@ class PhraseContainer extends Component {
     render(){ 
         return(
             <>
-                <PhrasesByLanguage 
-                phrases={this.props.phrases}/>  
+                <PhrasesByLanguage phrases={this.props.phrases}/>  
                 <br/> <br/>
                   <PhraseForm />
             </>

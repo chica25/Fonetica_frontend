@@ -5,7 +5,8 @@ import { connect } from 'react-redux'
 
 class PhraseForm extends React.Component {
    state = {
-    foreign_phrase: "",
+    english_phrase: "",
+    foreign_phrase: ""
    }
 
     handleChange = (e) => {
@@ -17,10 +18,11 @@ class PhraseForm extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log("hello", this.state)
+        // console.log("hello", this.props)
+        // debugger
         this.props.AddNewPhrase({
             english_phrase: this.state.english_phrase,
-            foreign_phrase: this.state.foreign_phrase,
+            foreign_phrase: this.state.foreign_phrase
             // language_id: this.state.language_id
             
             // newPhrase: this.state.foreign_phrase

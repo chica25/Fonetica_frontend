@@ -46,12 +46,12 @@ export const fetchLanguagePhrases = (languageId) => {
 //          }
 //     }
 
-export const AddNewPhrase = (data, newPhrase) => {
+export const AddNewPhrase = (data, languageId) => {
     return dispatch => {
-        const data = {
-            id: newPhrase["language_id"],
-            language: newPhrase["foreign_phrase"],
-        };
+        // const data = {
+        //     id: newPhrase["language_id"],
+        //     language: newPhrase["foreign_phrase"],
+        // };
         fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`, {
             headers: {
                 'Content-Type': 'application/json',
