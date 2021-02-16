@@ -22,7 +22,7 @@ class PhraseContainer extends Component {
 }
 
 const mapStateToProps = (state) => ({ 
-    phrases: state.phrases,
+    phrases: state.phrases
     // languages: state.languages
     
 })

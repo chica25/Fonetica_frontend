@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchLanguagePhrases } from '../actions/actionsCreator.js';
 import { Link } from 'react-router-dom';
+// import { getId } from '../actions/actionsCreator.js';
 
 
     class LanguageList extends React.Component {
@@ -10,9 +11,8 @@ import { Link } from 'react-router-dom';
         // debugger
         // e.preventDefault()
         this.props.fetchLanguagePhrases(e.target.id)
-        // console.log(e.target, "hi")
+        // this.props.getId(e.target.id)
         // debugger
-            // return <Redirect to="/phrases/{e.target.id}" />
         //when user clicks on a flag 
         // it will fetch the phrases of the language
         // connect the info to the redux store
@@ -40,8 +40,22 @@ import { Link } from 'react-router-dom';
         }
     }
 
-const mapStateToProps = (state) => ({
-    languages: state.languages
-}) 
+const mapStateToProps = (state) => {
+    return {
+        languages: state.languages
+    }
+}
 
-export default connect(mapStateToProps, {fetchLanguagePhrases})(LanguageList);
+// const mapDispatchToProps = dispatch => {
+//     return {
+//         fetchLanguagePhrases: () => {
+//         dispatch(fetchLanguagePhrases())
+//       },
+//         // getId: () => {
+// //         dispatch(getId())
+// //         }
+// //     };
+//     };
+// }   
+
+export default connect(mapStateToProps, { fetchLanguagePhrases })(LanguageList);

@@ -2,7 +2,7 @@ const initialState = {
     languages: [],
     phrases: [],
     createPhrase: [],
-    currentId: null
+    // currentId: ""
 }
 
 export const languageReducer = (state = initialState, action) => {
@@ -17,9 +17,9 @@ export const languageReducer = (state = initialState, action) => {
         
         case 'CREATE_PHRASES': 
             return [...state, action.payload]
-            
-        case 'GET_ID':
-            return {...state, currentId: action.payload}
+
+        // case 'GET_ID':
+        //     return {...state, currentId: action.payload}
 
             default:
                 return state;

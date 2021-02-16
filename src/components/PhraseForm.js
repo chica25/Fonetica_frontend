@@ -41,11 +41,8 @@ class PhraseForm extends React.Component {
                         <input placeholder="Enter phrase..."type="text" name="english_phrase" onChange={this.handleChange} value={this.state.english_phrase}/>
                         <br/><br/>
 
-                        {/* <form onSubmit={this.handleSubmit}> */}
                         <label>Foreign Phrase:</label>
                         <input placeholder="Enter phrase..."type="text" name="foreign_phrase" onChange={this.handleChange} value={this.state.foreign_phrase}/>
-                        {/* <input type="hidden" value={this.state.language_id} onChange={this.handleChange}/> */}
-
                         <br/><br/>
                         <input type="submit" value="submit phrase" />
                     </form>
