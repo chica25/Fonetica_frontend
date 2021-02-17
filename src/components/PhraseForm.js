@@ -6,14 +6,14 @@ import { connect } from 'react-redux'
 class PhraseForm extends React.Component {
    state = {
     english_phrase: "",
-    foreign_phrase: ""
+    foreign_phrase: "",
    }
 
     handleChange = (e) => {
         this.setState({
             // english_phrase: e.target.value,
             // foreign_phrase: e.target.value
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value.id
         })
     }
     
@@ -42,7 +42,7 @@ class PhraseForm extends React.Component {
                     
                    
                         <label>Foreign Phrase:</label>
-                        <input  placeholder="Enter phrase..."type="text" name="foreign_phrase" onChange={this.handleChange} value={this.state.foreign_phrase}/>
+                        <input placeholder="Enter phrase..."type="text" name="foreign_phrase" onChange={this.handleChange} value={this.state.foreign_phrase}/>
                         <h2>{this.state.foreign_phrase}</h2>
                         {/* <input type="submit" value="submit phrase" /> */}
                         <button>submit</button>

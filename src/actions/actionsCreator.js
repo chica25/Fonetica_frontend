@@ -29,7 +29,7 @@ export const fetchLanguagePhrases = (languageId) => {
 // export const AddNewPhrase = (data, languageId) => {
 //     return (dispatch) => {
 
-//         fetch(`http://localhost:3000/api/v1/languages/${languageId}/phrases`, {
+//         fetch(`http://localhost:3000/languages/${languageId}/phrases`, {
 //             headers: {
 //                 'Content-Type': 'application/json',
 //                 'Accept': 'application/json'
@@ -45,26 +45,45 @@ export const fetchLanguagePhrases = (languageId) => {
 //          }
 //     }
 
+
+export const AddNewPhrase = (data, languageId) => {
+    return (dispatch) => {
+
+        fetch(`http://localhost:3000/languages/${languageId}/phrases`, {
+            method: "POST",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify({ languageId }),
+         })
+           
+            .then(response => response.json())
+                .then(newPhrases => 
+                    dispatch({
+                      type: 'CREATE_PHRASES',
+                      payload: { data, newPhrases }
+                }))
+            }
+    }
+
     // export const getId = (id) => ({
     //     type: 'GET_ID',
     //     payload: { id },
     // })
 
 
-export const AddNewPhrase = (data) => {
-    return (dispatch) => {
-        fetch("http://localhost:3000/phrases", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-                // "Accept": "application/json"
-                // "Access-Control-Allow-Origin": "*"
-            body: JSON.stringify(data)
-            })
-            .then(response => response.json())
-                .then(newPhrases => dispatch({
-                      type: "CREATE_PHRASES",
-                      payload: newPhrases 
-                }))
-         }
-    }
+// export const AddNewPhrase = (data) => {
+//     return (dispatch) => {
+//         fetch("http://localhost:3000/phrases", {
+//             method: "POST",
+//             headers: { "Content-Type": "application/json" },
+//                 "Accept": "application/json",
+//                 // "Access-Control-Allow-Origin": "*"
+//             body: JSON.stringify(data)
+//             })
+//             .then(response => response.json())
+//                 .then(newPhrases => dispatch({
+//                       type: "CREATE_PHRASES",
+//                       payload: newPhrases 
+//                 }))
+//          }
+
 
