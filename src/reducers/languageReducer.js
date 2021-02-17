@@ -7,15 +7,6 @@ const initialState = {
     // currentId: ""
 }
 
-// case 'ADD_TRANSACTION':
-//       let accounts = state.accounts.map(account => {
-//         if (account.id === action.payload.id) {
-//           return action.payload
-//         } else {
-//           return account
-//         }
-//       })
-
 export const languageReducer = (state = initialState, action) => {
     // console.log("hello!!!", action)
     switch(action.type){

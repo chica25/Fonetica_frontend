@@ -1,4 +1,6 @@
 import React from 'react';
+// import PhraseForm from './PhraseForm'
+
 
 function PhrasesByLanguage (props) {
     return (
@@ -6,13 +8,13 @@ function PhrasesByLanguage (props) {
             {props.phrases.map((phrase) => {
                 return (
                     <div key={phrase["id"]}>
-                        <ol>
-                            <li> {phrase["english_phrase"]}</li>
+                        <ul>
+                            <li> {phrase["english_phrase"]}
                             <br/> 
-                            <li>{phrase["foreign_phrase"]} </li>   
-                        </ol>
-                    </div>
-                )
+                            {phrase["foreign_phrase"]} </li>   
+                        </ul>
+                     </div>
+                    )
              })}
         </>
     )

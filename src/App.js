@@ -4,7 +4,7 @@ import Home from './components/Home';
 import LanguageList from './components/LanguageList';
 import PhraseContainer from './components/PhraseContainer';
 import NavBar from './components/NavBar';
-import PhraseForm from './components/PhraseForm';
+// import PhraseForm from './components/PhraseForm';
 
 class App extends React.Component {
   render(){
@@ -14,8 +14,8 @@ class App extends React.Component {
           <Switch>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/languages" component={LanguageList}/>
-              <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
-              {/* <Route exact path="/phrases" component={PhraseForm}/>   */}
+               <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
+              {/* <Route exact path="/phrases" component={PhraseForm}/>    */}
             </Switch>
      </Router>
     );
