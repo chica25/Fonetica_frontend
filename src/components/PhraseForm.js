@@ -11,16 +11,18 @@ class PhraseForm extends React.Component {
 
     handleChange = (e) => {
         this.setState({
+            // english_phrase: e.target.value,
+            // foreign_phrase: e.target.value
             [e.target.name]: e.target.value
         })
     }
     
 
-    handleSubmit = (e) => {
+    handleOnSubmit = (e) => {
         // debugger
         e.preventDefault();
-        // console.log("hi", e.target)
         // debugger
+        
          this.props.AddNewPhrase({
             english_phrase: this.state.english_phrase,
             foreign_phrase: this.state.foreign_phrase
@@ -28,17 +30,20 @@ class PhraseForm extends React.Component {
     }
 
         render(){
+            
             return(
                 <div>
-                    <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleOnSubmit}>
                         <label>English Phrase:</label>
                         <input placeholder="Enter phrase..."type="text" name="english_phrase" onChange={this.handleChange} value={this.state.english_phrase}/>
-                        <br/><br/>
-
+                    <h2>{this.state.english_phrase}</h2>
+                    
+                   
                         <label>Foreign Phrase:</label>
-                        <input placeholder="Enter phrase..."type="text" name="foreign_phrase" onChange={this.handleChange} value={this.state.foreign_phrase}/>
-                        <br/><br/>
-                        <input type="submit" value="submit phrase" />
+                        <input  placeholder="Enter phrase..."type="text" name="foreign_phrase" onChange={this.handleChange} value={this.state.foreign_phrase}/>
+                        <h2>{this.state.foreign_phrase}</h2>
+                        {/* <input type="submit" value="submit phrase" /> */}
+                        <button>submit</button>
                     </form>
                 </div>
             )
