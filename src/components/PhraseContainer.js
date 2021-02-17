@@ -21,8 +21,8 @@ class PhraseContainer extends Component {
 }
 
 const mapStateToProps = (state) => ({ 
-    phrases: state.phrases,
-    languages: state.languages
+    phrases: state.phrases
+    // languages: state.languages
     
 })
 

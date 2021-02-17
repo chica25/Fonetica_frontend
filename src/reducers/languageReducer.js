@@ -3,7 +3,7 @@
 const initialState = {
     languages: [],
     phrases: [],
-    createPhrase: [],
+    createPhrase: []
     // currentId: ""
 }
 
@@ -26,7 +26,7 @@ export const languageReducer = (state = initialState, action) => {
             // console.log('SET_PHRASES')
             return {...state, phrases: action.payload}
         
-        case 'CREATE_PHRASES': 
+        case 'CREATE_PHRASE': 
             return {...state, phrases: [...state.phrases, action.payload]}
 
         // case 'GET_ID':
