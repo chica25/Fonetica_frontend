@@ -1,4 +1,4 @@
-// import PhrasesByLanguage from "../components/PhrasesByLanguage"
+import PhrasesByLanguage from "../components/PhrasesByLanguage"
 
 const initialState = {
     languages: [],
@@ -21,8 +21,17 @@ export const languageReducer = (state = initialState, action) => {
         //     const languages = state.languages.concant(action.payload)
         //     return {...state, languages};
         
-        case 'CREATE_PHRASE': 
+        case 'CREATE_PHRASES': 
             return {...state, phrases: [...state.phrases, action.payload]}
+            
+            // let phrases = state.phrases.map(phrase => {
+            //     if (phrase.id ===  action.payload.id) {
+            //       return action.payload
+            //     } else {
+            //       return phrase
+            //     }
+            // })
+            // return {...state, phrases: phrases}
 
         // case 'GET_ID':
         //     return {...state, currentId: action.payload}

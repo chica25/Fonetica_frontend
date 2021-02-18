@@ -51,23 +51,78 @@ export const fetchLanguagePhrases = (languageId) => {
 //     }
 // }
 
-export const AddNewPhrase = (data, languageId) => {
-    return (dispatch) => {
+// export const AddNewPhrase = (data, languageId) => {
+//     return (dispatch) => {
 
-        fetch(`http://localhost:3000/languages/${languageId}/phrases`, {
-            method: "POST",
-            headers: { "Content-type": "application/json" },
-            body: JSON.stringify({ data}),
-         })
+//         fetch(`http://localhost:3000/languages/${languageId}/phrases`, {
+//             method: "POST",
+//             headers: { "Content-type": "application/json" },
+//             body: JSON.stringify({ data}),
+//          })
            
+//             .then(response => response.json())
+//                 .then(newPhrases => 
+//                     dispatch({
+//                       type: 'CREATE_PHRASES',
+//                       payload: { newPhrases }
+//                 }))
+//             }
+//     }
+
+
+// export const fetchLanguages = () => {
+//     return (dispatch) => {
+//         fetch("http://localhost:3000/languages")
+//             .then(response => response.json())
+//                 .then(languages => dispatch({
+//                     type: 'GET_LANGUAGES',
+//                     payload: languages }))
+//             }
+//     }
+
+// export const addQuestion = (data) => {
+
+
+// export const AddNewPhrase = (data) => {
+//     return (dispatch) => {
+
+        // fetch("http://localhost:3000/phrases", {
+        //     method: "POST",
+        //     headers: { "Content-type": "application/json" },
+        //     body: JSON.stringify({ data }),
+        //  })
+           
+        //     .then(response => response.json())
+        //         .then(newPhrases => 
+        //             dispatch({
+        //               type: 'CREATE_PHRASES',
+        //               payload: { newPhrases }
+        //         }))
+        //     }
+            
+        // }
+
+
+    export const AddNewPhrase = (data, languageId) => {
+            debugger
+        return (dispatch) => {
+            fetch(`http://localhost:3000/languages/${languageId}/phrases`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // 'Accept': 'application/json'
+                },
+               
+                body: JSON.stringify(data)
+            })
             .then(response => response.json())
-                .then(newPhrases => 
-                    dispatch({
-                      type: 'CREATE_PHRASES',
-                      payload: { newPhrases }
-                }))
-            }
+            .then(phrase => {
+                dispatch({type: 'CREATE_PHRASES', payload: phrase })
+            })
+
+        }
     }
+
 
     // export const getId = (id) => ({
     //     type: 'GET_ID',
@@ -76,14 +131,18 @@ export const AddNewPhrase = (data, languageId) => {
 
 
 // export const AddNewPhrase = (data) => {
+
 //     return (dispatch) => {
 //         fetch("http://localhost:3000/phrases", {
-//             method: "POST",
-//             headers: { "Content-Type": "application/json" },
+//             headers: { 
+//                 "Content-Type": "application/json",
 //                 "Accept": "application/json",
 //                 // "Access-Control-Allow-Origin": "*"
+//             },
+//             method: "POST",
 //             body: JSON.stringify(data)
 //             })
+
 //             .then(response => response.json())
 //                 .then(newPhrases => dispatch({
 //                       type: "CREATE_PHRASES",
@@ -91,4 +150,4 @@ export const AddNewPhrase = (data, languageId) => {
 //                 }))
 //          }
 
-
+//     }

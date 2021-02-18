@@ -15,7 +15,7 @@ class App extends React.Component {
               <Route exact path="/home" component={Home}/>
               <Route exact path="/languages" component={LanguageList}/>
                <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
-              {/* <Route exact path="/phrases" component={PhraseForm}/>    */}
+               {/* <Route exact path="/phrases/" component={PhraseForm}/> */}
             </Switch>
      </Router>
     );
