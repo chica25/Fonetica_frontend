@@ -3,13 +3,14 @@ import { AddNewPhrase } from "../actions/actionsCreator";
 import { connect } from 'react-redux'
 
 
+
 class PhraseForm extends React.Component {
    state = {
     english_phrase: "",
     foreign_phrase: ""
    }
 
-    handleChange = (e) => {
+    handlePhraseInput = (e) => {
         this.setState({
             // english_phrase: e.target.value,
             // // foreign_phrase: e.target.value
@@ -19,16 +20,15 @@ class PhraseForm extends React.Component {
     }
     
 
-    handleOnSubmit = (e) => {
-        // debugger
+    newPhraseSubmitHandler = (e) => {
         e.preventDefault();
-        // debugger
-        
          this.props.AddNewPhrase(this.state)
+
          this.setState({
-                foreign_phrase: this.state.foreign_phrase,
-                english_phrase: this.state.english_phrase
-                // newPhrase: this.state.newPhrase
+                // foreign_phrase: this.state.foreign_phrase.language_id,
+                // english_phrase: this.state.english_phrase.language_id
+                foreign_phrase: "",
+                english_phrase: ""
             })
         // })
     }
@@ -37,20 +37,23 @@ class PhraseForm extends React.Component {
                return(
                 <div>
                     <h2>Start Practicing:</h2>
-                    <form onSubmit={this.handleOnSubmit}>
+                    <form className="form" onSubmit={this.newPhraseSubmitHandler} >
                     
                         <label>English Phrase:</label>
-                        <input placeholder="Enter phrase..."type="text" name="english_phrase" onChange={this.handleChange} value={this.english_phrase}/>
+                        <input placeholder="Enter phrase..."type="text" name="english_phrase" onChange={this.handlePhraseInput} value={this.state.english_phrase}/>
                         <button>create</button>
-                        <h2>{this.state.newPhrase}</h2>
-                        
+                        {/* <h2>{this.state.newPhrase}</h2> */}
+                        <br/>
                         
                    {/* <h2>{this.state.foreign_phrase}</h2>  */}
                         <label>Foreign Phrase:</label>
-                        <input placeholder="Enter phrase..."type="text" name="foreign_phrase" onChange={this.handleChange} value={this.state.foreign_phrase}/>
+                        <input placeholder="Enter phrase..."type="text" name="foreign_phrase" onChange={this.handlePhraseInput} value={this.state.foreign_phrase}/>
                         
                         {/* <input type="create" value="submit phrase" />  */}
                         <button>create</button>
+
+                        {/* <input type='hidden' name="authenticity_token" value={this.props.authenticityToken} /> */}
+                                            
                     </form>
                 </div>
             )

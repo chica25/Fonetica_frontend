@@ -16,6 +16,10 @@ export const languageReducer = (state = initialState, action) => {
         case 'GET_PHRASES': 
             // console.log('SET_PHRASES')
             return {...state, phrases: action.payload}
+
+        // case "LANGUAGE_ID":
+        //     const languages = state.languages.concant(action.payload)
+        //     return {...state, languages};
         
         case 'CREATE_PHRASE': 
             return {...state, phrases: [...state.phrases, action.payload]}

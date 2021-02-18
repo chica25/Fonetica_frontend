@@ -12,7 +12,7 @@ class PhraseContainer extends Component {
             <>
                 <PhrasesByLanguage phrases={this.props.phrases}/>  
                 <br/> <br/>
-                  <PhraseForm english_phrase={this.props.english_phrase} foreign_phrase={this.props.foreign_phrase}/>
+                  <PhraseForm />
             </>
             
         )
