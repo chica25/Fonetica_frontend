@@ -9,11 +9,11 @@ export const fetchLanguages = () => {
             }
     }
 
-export const fetchLanguagePhrases = (language_id) => {
+export const fetchLanguagePhrases = (languageId) => {
    
     return (dispatch) => {
         // debugger
-        fetch(`http://localhost:3000/languages/${language_id}/phrases`)
+        fetch(`http://localhost:3000/languages/${languageId}/phrases`)
             .then(response => response.json())
                 .then(phrases => dispatch({
                     // debugger
@@ -51,13 +51,13 @@ export const fetchLanguagePhrases = (language_id) => {
 //     }
 // }
 
-export const AddNewPhrase = (data, language_id) => {
+export const AddNewPhrase = (data, languageId) => {
     return (dispatch) => {
 
-        fetch(`http://localhost:3000/languages/${language_id}/phrases`, {
+        fetch(`http://localhost:3000/languages/${languageId}/phrases`, {
             method: "POST",
             headers: { "Content-type": "application/json" },
-            body: JSON.stringify({ language_id }),
+            body: JSON.stringify({ data}),
          })
            
             .then(response => response.json())

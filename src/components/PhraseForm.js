@@ -12,23 +12,20 @@ class PhraseForm extends React.Component {
 
     handlePhraseInput = (e) => {
         this.setState({
-            // english_phrase: e.target.value,
-            // // foreign_phrase: e.target.value
-            // newPhrase: e.target.value,
             [e.target.name]: e.target.value
         })
     }
     
 
-    newPhraseSubmitHandler = (e) => {
+    phraseSubmitHandler = (e) => {
         e.preventDefault();
          this.props.AddNewPhrase(this.state)
 
          this.setState({
-                // foreign_phrase: this.state.foreign_phrase.language_id,
-                // english_phrase: this.state.english_phrase.language_id
-                foreign_phrase: "",
-                english_phrase: ""
+                foreign_phrase: this.state.foreign_phrase,
+                english_phrase: this.state.english_phrase
+                // foreign_phrase: "",
+                // english_phrase: ""
             })
         // })
     }
@@ -37,7 +34,7 @@ class PhraseForm extends React.Component {
                return(
                 <div>
                     <h2>Start Practicing:</h2>
-                    <form className="form" onSubmit={this.newPhraseSubmitHandler} >
+                    <form className="form" onSubmit={this.phraseSubmitHandler} >
                     
                         <label>English Phrase:</label>
                         <input placeholder="Enter phrase..."type="text" name="english_phrase" onChange={this.handlePhraseInput} value={this.state.english_phrase}/>
