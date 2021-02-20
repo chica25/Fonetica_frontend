@@ -104,7 +104,7 @@ export const fetchLanguagePhrases = (languageId) => {
 
 
     export const AddNewPhrase = (data, languageId) => {
-            debugger
+            // debugger
         return (dispatch) => {
             fetch(`http://localhost:3000/languages/${languageId}/phrases`, {
                 method: 'POST',
@@ -117,7 +117,10 @@ export const fetchLanguagePhrases = (languageId) => {
             })
             .then(response => response.json())
             .then(phrase => {
-                dispatch({type: 'CREATE_PHRASES', payload: phrase })
+                    dispatch({type: 'CREATE_PHRASES',
+                    payload: phrase,
+                    // key: languageId
+                })
             })
 
         }

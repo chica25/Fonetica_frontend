@@ -20,10 +20,13 @@ class PhraseContainer extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({ 
-    phrases: state.phrases
+const mapStateToProps = (state) => { 
+    // debugger
+    return { phrases: state.phrases }
+}
+        
     // languages: state.languages
     
-})
+
 
 export default connect(mapStateToProps)(PhraseContainer);

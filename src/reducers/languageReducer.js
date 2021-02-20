@@ -1,4 +1,4 @@
-import PhrasesByLanguage from "../components/PhrasesByLanguage"
+// import PhrasesByLanguage from "../components/PhrasesByLanguage"
 
 const initialState = {
     languages: [],
