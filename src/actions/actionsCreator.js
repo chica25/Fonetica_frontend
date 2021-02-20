@@ -10,7 +10,7 @@ export const fetchLanguages = () => {
     }
 
 export const fetchLanguagePhrases = (languageId) => {
-   
+   console.log(languageId, "hello")
     return (dispatch) => {
         // debugger
         fetch(`http://localhost:3000/languages/${languageId}/phrases`)
@@ -126,6 +126,10 @@ export const fetchLanguagePhrases = (languageId) => {
         }
     }
 
+    export const selectLanguage = (id) => ({
+            type: 'SELECTED_LANGUAGE',
+            payload: id
+    })
 
     // export const getId = (id) => ({
     //     type: 'GET_ID',

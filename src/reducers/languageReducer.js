@@ -20,10 +20,14 @@ export const languageReducer = (state = initialState, action) => {
         // case "LANGUAGE_ID":
         //     const languages = state.languages.concant(action.payload)
         //     return {...state, languages};
-        
+
         case 'CREATE_PHRASES': 
-            return {...state, phrases: [...state.phrases, action.payload]}
-            
+        return {...state, phrases: [...state.phrases, action.payload]}
+        
+        case 'SELECTED_LANGUAGE':
+            return {...state, selectedLanguage: action.payload}
+
+     
             // let phrases = state.phrases.map(phrase => {
             //     if (phrase.id ===  action.payload.id) {
             //       return action.payload

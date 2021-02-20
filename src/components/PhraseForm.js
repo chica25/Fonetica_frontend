@@ -22,16 +22,16 @@ class PhraseForm extends React.Component {
     //2nd way pass it as a prop from the parent component
 
     phraseSubmitHandler = (e) => {
-       
+    //    debugger
         e.preventDefault();
         // debugger
         // const newphrase = {...this.state, id: language_id }
         // this.props.AddNewPhrase({phrase: { english_phrase: this.state.english_phrase, foreign_phrase: this.state.foreign_phrase}})
-         this.props.AddNewPhrase(this.state)
+         this.props.AddNewPhrase(this.state, this.props.selectedLanguage )
         //  debugger
          this.setState({
             english_phrase: "",
-            foreign_phrase: "",
+            foreign_phrase: ""
         })
     }
  
@@ -53,8 +53,8 @@ class PhraseForm extends React.Component {
                         <label>Foreign Phrase:</label>
                         <input placeholder="Enter phrase..."type="text" id="foreign_phrase" name="foreign_phrase" onChange={this.handlePhraseInput} value={this.state.foreign_phrase}/>
                         
-                        {/* <input type="create" value="submit phrase" />  */}
-                        <button>submit</button>
+                        <input type="submit" /> 
+                        {/* <button>submit</button> */}
                                             
                     </form>
                 </div>
@@ -63,14 +63,19 @@ class PhraseForm extends React.Component {
     }
 
 
-// const mapStateToProps = (state) => {
+const mapStateToProps = (state) => {
 
-//         return { 
-//             formData: state.PhraseForm
-//         }
-// }   
+        return { 
+            selectedLanguage: state.selectedLanguage
+
+        }
+}   
 
 
 // export default connect(mapStateToProps, { AddNewPhrase })(PhraseForm);
 
-export default connect(null, { AddNewPhrase })(PhraseForm);
+// export default connect((state ) => {return {...state}}, { AddNewPhrase })(PhraseForm);
+
+export default connect(mapStateToProps, { AddNewPhrase })(PhraseForm);
+// notes - null indicates that mapStateToProps is not added
+// AddNewPhrase gives access to the props that are in the AddNewPhras
