@@ -4,9 +4,18 @@ import Home from './components/Home';
 import LanguageList from './components/LanguageList';
 import PhraseContainer from './components/PhraseContainer';
 import NavBar from './components/NavBar';
+import { connect } from 'react-redux';
+import {fetchLanguages} from './actions/actionsCreator';
 // import PhraseForm from './components/PhraseForm';
 
 class App extends React.Component {
+
+  componentDidMount() {
+    // console.log("hello")
+    this.props.fetchLanguages();     
+}
+
+
   render(){
     return (
      <Router>
@@ -22,4 +31,4 @@ class App extends React.Component {
   }
 }
 
-export default (App);
+export default connect(null, {fetchLanguages})(App);

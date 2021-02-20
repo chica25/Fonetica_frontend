@@ -1,22 +1,18 @@
 import React from 'react';
 // import PhraseForm from './PhraseForm'
 
-
-const PhrasesByLanguage = (props) => {
+function PhrasesByLanguage (props) {
     return (
-        <>  
-            {props.phrases.map(phrase => {
+            <>
+            {props.phrases.map((phrase, id) => {
                 return (
-                    <div key={phrase.id}>
-                    <ul>
-                        <li>{phrase.english_phrase} {phrase.foreign_phrase}</li>                 
-                    </ul>
-                </div>
+                    <div key={id}>
+                       English Phrase: {phrase.english_phrase + " " } <br/>
+                        Foreign Phrase: {phrase.foreign_phrase}
+                    </div>
                 )
-            })} 
-                
-            </>    
-        )
-    }
-
-export default PhrasesByLanguage;
+             })}
+        </>
+    )
+}
+export default PhrasesByLanguage

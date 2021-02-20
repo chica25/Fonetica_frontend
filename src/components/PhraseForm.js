@@ -25,8 +25,8 @@ class PhraseForm extends React.Component {
     //    debugger
         e.preventDefault();
         // debugger
-        this.props.AddNewPhrase({phrase: { english_phrase: this.state.english_phrase, foreign_phrase: this.state.foreign_phrase}})
-        this.props.AddNewPhrase(this.state, this.props.selectedLanguage )
+        // this.props.AddNewPhrase({phrase: { english_phrase: this.state.english_phrase, foreign_phrase: this.state.foreign_phrase}})
+        this.props.AddNewPhrase(this.state, this.props.selectedLanguage)
         //  debugger
         this.setState({
             english_phrase: "",

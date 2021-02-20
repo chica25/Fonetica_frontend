@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
         handleClick = (e) => {     
             // console.log(e.target.id, "hello!")
         this.props.fetchLanguagePhrases(e.target.id)
+        // debugger
         this.props.selectLanguage(e.target.id)
         // debugger
         //when user clicks on a flag 
@@ -18,9 +19,10 @@ import { Link } from 'react-router-dom';
         }
 
         componentDidMount() {
-            // console.log("hello")
-          this.props.fetchLanguages();
-        //   console.log(this)
+            // console.log("hello", this.props)
+            
+           
+             
         }
         
         render(){
@@ -28,7 +30,7 @@ import { Link } from 'react-router-dom';
                 <div key={i}> <h4 style={{ }}>{lang.language_name}</h4>
                     <Link to={`/languages/phrases/${lang.language_name}`}>
                         <button onClick={this.handleClick}>
-                            <img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/>
+                            <img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/>     
                         </button>
                     </Link>
 

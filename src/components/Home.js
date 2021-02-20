@@ -8,18 +8,18 @@ import { connect } from 'react-redux';
 
 class Home extends Component {
 
-    componentDidMount() {
-        // console.log("hello")
-      this.props.fetchLanguages();
-    //   console.log(this)
-    }
+    // componentDidMount() {
+    //     // console.log("hello")
+    //   this.props.fetchLanguages();
+    // //   console.log(this)
+    // }
 
  render() {
     //  console.log("HELLO!!!", this.props)
      return(
          <>
             <h2>Welcome</h2>
-            <LanguageList/>
+            <LanguageList />
             {/* <PhraseForm /> */}
          </>
      )
