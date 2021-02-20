@@ -24,8 +24,6 @@ const mapStateToProps = (state) => {
     // debugger
     return { phrases: state.phrases }
 }
-        
-    // languages: state.languages
     
 
 

@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import LanguageList from './LanguageList';
 import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
-// import PhraseForm from './PhraseForm'
 
 class Home extends Component {
 

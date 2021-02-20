@@ -2,9 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchLanguagePhrases, selectLanguage , fetchLanguages} from '../actions/actionsCreator.js';
 import { Link } from 'react-router-dom';
-// import { getId } from '../actions/actionsCreator.js';
-// import PhraseForm from './PhraseForm'
-
 
     class LanguageList extends React.Component {
 
@@ -53,17 +50,5 @@ const mapStateToProps = (state) => {
         selectedLanguage: state.selectedLanguage
     }
 }
-
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         fetchLanguagePhrases: () => {
-//         dispatch(fetchLanguagePhrases())
-//       },
-//         // getId: () => {
-// //         dispatch(getId())
-// //         }
-// //     };
-//     };
-// }   
 
 export default connect(mapStateToProps, { fetchLanguagePhrases, selectLanguage, fetchLanguages })(LanguageList);
