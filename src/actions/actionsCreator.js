@@ -36,14 +36,14 @@ export const fetchLanguagePhrases = (languageId) => {
                
                 body: JSON.stringify(data)
             })
-            .then(response => response.json())
-            .then(phrase => {
-                    dispatch({type: 'CREATE_PHRASES',
-                    payload: phrase,
+                .then(response => response.json())
+                    .then(phrase => {
+                     dispatch({type: 'CREATE_PHRASES',
+                        payload: phrase,
+                    })
                 })
-            })
 
-        }
+            }
     }
 
     export const selectLanguage = (id) => ({

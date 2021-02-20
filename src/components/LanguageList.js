@@ -18,12 +18,12 @@ import { Link } from 'react-router-dom';
 
         }
 
-        componentDidMount() {
-            // console.log("hello", this.props)
+        // componentDidMount() {
+        //     // console.log("hello", this.props)
             
            
              
-        }
+        // }
         
         render(){
             const languages = this.props.languages.map((lang, i) => 
