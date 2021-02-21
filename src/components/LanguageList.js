@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
         handleClick = (e) => {     
             // console.log(e.target.id, "hello!")
         this.props.fetchLanguagePhrases(e.target.id)
-        // debugger
         this.props.selectLanguage(e.target.id)
         // debugger
         //when user clicks on a flag 
@@ -18,12 +17,6 @@ import { Link } from 'react-router-dom';
 
         }
 
-        // componentDidMount() {
-        //     // console.log("hello", this.props)
-            
-           
-             
-        // }
         
         render(){
             const languages = this.props.languages.map((lang, i) => 

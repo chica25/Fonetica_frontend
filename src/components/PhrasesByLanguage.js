@@ -1,5 +1,4 @@
 import React from 'react';
-// import PhraseForm from './PhraseForm'
 
 function PhrasesByLanguage (props) {
     return (
@@ -15,4 +14,5 @@ function PhrasesByLanguage (props) {
         </>
     )
 }
+
 export default PhrasesByLanguage

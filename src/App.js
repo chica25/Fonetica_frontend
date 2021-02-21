@@ -6,7 +6,7 @@ import PhraseContainer from './components/PhraseContainer';
 import NavBar from './components/NavBar';
 import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
-// import PhraseForm from './components/PhraseForm';
+import Footer from './components/Footer'
 
 class App extends React.Component {
 
@@ -26,6 +26,7 @@ class App extends React.Component {
                <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
                {/* <Route exact path="/phrases/" component={PhraseForm}/> */}
             </Switch>
+            <Footer />
      </Router>
     );
   }
