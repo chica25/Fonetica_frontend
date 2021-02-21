@@ -8,6 +8,8 @@ import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
 import Resources from './components/ResourcesPage';
 import './style.css'
+// import Logo from './components/Logo';
+
 // import banner_3 from '../public/images/banner_3.png';
 
 // import Footer from './components/Footer'
@@ -21,7 +23,9 @@ class App extends React.Component {
 
 
   render(){
+
     return (
+      
      <Router>
        <NavBar/>
           <Switch>

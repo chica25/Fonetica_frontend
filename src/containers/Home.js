@@ -6,10 +6,9 @@ import LanguageList from '../components/LanguageList';
 import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
 import '../style.css'
-import Logo from '../components/Logo';
 import UserStories from '../components/UserStories';
 import Footer from '../components/Footer';
-
+// import Logo from '../components/Logo';
 
 
 
@@ -18,17 +17,14 @@ class Home extends Component {
  
  render() {
     //  console.log("HELLO!!!", this.props)
+    
      return(
+         
          <>
-         <div>
-      <br/>
-    {/* <img src={banner_3} alt="banner" />  */}
-      <br/>
-    </div>
-            < Logo />
+       
             <h2>Welcome</h2>
-            <LanguageList />
             <UserStories />
+            <LanguageList />
             <br/><br/>
             <Footer />
          </>
