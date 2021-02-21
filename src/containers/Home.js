@@ -5,6 +5,12 @@ import React, { Component } from 'react';
 import LanguageList from '../components/LanguageList';
 import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
+import '../style.css'
+import Logo from '../components/Logo';
+import UserStories from '../components/UserStories';
+import Footer from '../components/Footer';
+
+
 
 
 class Home extends Component {
@@ -19,8 +25,12 @@ class Home extends Component {
     {/* <img src={banner_3} alt="banner" />  */}
       <br/>
     </div>
+            < Logo />
             <h2>Welcome</h2>
             <LanguageList />
+            <UserStories />
+            <br/><br/>
+            <Footer />
          </>
      )
    

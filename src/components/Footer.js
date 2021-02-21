@@ -1,5 +1,4 @@
-import sm_icons from '../images/sm_icons.png'
-
+import '../style.css'
 
 function Footer() {
 //   const style = {
@@ -10,7 +9,6 @@ function Footer() {
 // } 
     return(
         <div className="footer" >
-          <img className="SM" src={sm_icons} alt={"SM"} />
           <h5>Copyright© 2021 | Fonetica. All rights reserved</h5>
           
         </div>

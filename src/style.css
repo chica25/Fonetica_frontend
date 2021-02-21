@@ -42,7 +42,8 @@ li {
 } 
 
 .footer {
-    text-align: "center";
-    font-style: "normal"; 
-    color: "LightSteelBlue";
+  text-align: center;
+  font-family: HelveticaNeue-Light;
+  font-style: normal;
+  color: LightSteelBlue;
 }
