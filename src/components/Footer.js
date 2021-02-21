@@ -1,21 +1,21 @@
-// import sm_icons from '../images/sm_icons.png'
+import sm_icons from './public/images/sm_icons.png'
 
 
-// function Footer() {
+function Footer() {
 //   const style = {
 //     textAlign: "center",
 //     fontFamily: "HelveticaNeue-Light",
 //     fontStyle: "normal", 
 //     color: "LightSteelBlue"
 // } 
-//     return(
-//         <div className="footer" style={style}>
-//           <img className="SM" src={sm_icons} alt={"SM"} />
-//           <h5>Copyright© 2021 | Fonetica. All rights reserved</h5>
+    return(
+        <div className="footer" >
+          <img className="SM" src={sm_icons} alt={"SM"} />
+          <h5>Copyright© 2021 | Fonetica. All rights reserved</h5>
           
-//         </div>
-//       )
+        </div>
+      )
+}
 
-// }
 
-// export default Footer;
+export default Footer;

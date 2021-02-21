@@ -6,6 +6,8 @@ import PhraseContainer from './containers/PhraseContainer';
 import NavBar from './components/NavBar';
 import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
+import Resources from './components/Resources';
+
 // import Footer from './components/Footer'
 
 class App extends React.Component {
@@ -29,6 +31,8 @@ class App extends React.Component {
             </Switch>
             {/* <Footer /> */}
      </Router>
+
+     
     );
   }
 }

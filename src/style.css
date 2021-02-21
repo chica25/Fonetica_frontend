@@ -15,6 +15,15 @@ body {
   overflow: hidden;
 }
 
+.li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(44, 157, 210);
+  
+}
+
 li {
   float: left;
   text-align: center;
@@ -23,4 +32,17 @@ li {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
+}
+
+.SM {
+  float: right;
+  width:150px;
+  margin-right: 70px;
+
+} 
+
+.footer {
+    text-align: "center";
+    font-style: "normal"; 
+    color: "LightSteelBlue";
 }
