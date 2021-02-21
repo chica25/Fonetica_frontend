@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //connect Home to mapDispatchToProps
 //dispatch a thunk action in componentDidMount
 //to fetch list of lanugages from API and update app state with that list
-import LanguageList from './LanguageList';
+import LanguageList from '../components/LanguageList';
 import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
 

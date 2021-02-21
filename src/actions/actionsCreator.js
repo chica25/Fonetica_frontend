@@ -10,7 +10,7 @@ export const fetchLanguages = () => {
     }
 
 export const fetchLanguagePhrases = (languageId) => {
-   console.log(languageId, "hello")
+//    console.log(languageId, "hello")
     return (dispatch) => {
         // debugger
         fetch(`http://localhost:3000/languages/${languageId}/phrases`)

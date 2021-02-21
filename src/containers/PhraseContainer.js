@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PhrasesByLanguage from './PhrasesByLanguage'
-import PhraseForm from './PhraseForm'
+import PhrasesByLanguage from '../components/PhrasesByLanguage'
+import PhraseForm from '../components/PhraseForm'
 
 class PhraseContainer extends Component {
 

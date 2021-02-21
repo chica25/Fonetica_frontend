@@ -1,6 +1,11 @@
 /* .nav-wrapper {
   color: tomato;
 } */
+body {
+  margin: 0;
+  font-family: helvetica;
+  color:black;
+}
 
 
 .nav-wrapper {
@@ -8,8 +13,6 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /* background-color: rgb(44, 157, 210); */
-  
 }
 
 li {

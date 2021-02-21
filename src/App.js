@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './containers/Home';
 import LanguageList from './components/LanguageList';
-import PhraseContainer from './components/PhraseContainer';
+import PhraseContainer from './containers/PhraseContainer';
 import NavBar from './components/NavBar';
 import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 
 class App extends React.Component {
 
@@ -26,7 +26,7 @@ class App extends React.Component {
                <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
                {/* <Route exact path="/phrases/" component={PhraseForm}/> */}
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
      </Router>
     );
   }
