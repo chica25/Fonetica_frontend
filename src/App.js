@@ -7,6 +7,7 @@ import NavBar from './components/NavBar';
 import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
 import Resources from './components/Resources';
+// import banner_3 from '../public/images/banner_3.png';
 
 // import Footer from './components/Footer'
 
@@ -28,6 +29,8 @@ class App extends React.Component {
               <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
               <Route exact path="/resources" component={Resources}/>
                {/* <Route exact path="/phrases/" component={PhraseForm}/> */}
+               {/* <img style={img1} src={banner_3 } alt="banner" />  */}
+      <br/>
             </Switch>
             {/* <Footer /> */}
      </Router>

@@ -1,4 +1,4 @@
-import sm_icons from './public/images/sm_icons.png'
+import sm_icons from '../images/sm_icons.png'
 
 
 function Footer() {

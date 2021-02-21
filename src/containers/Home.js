@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import LanguageList from '../components/LanguageList';
 import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
-import banner_3 from '../public/images/banner_3.png';
+
 
 class Home extends Component {
 
@@ -16,7 +16,7 @@ class Home extends Component {
          <>
          <div>
       <br/>
-    <img style={img1} src={banner_3 } alt="banner" /> 
+    {/* <img src={banner_3} alt="banner" />  */}
       <br/>
     </div>
             <h2>Welcome</h2>
