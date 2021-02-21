@@ -1,9 +1,9 @@
 import React from 'react'
 
- function Resources() {
+ function ResourcesPage() {
     return (
         <h2>Resources</h2>
     )
 }
 
-export default Resources;
+export default ResourcesPage;

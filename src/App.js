@@ -6,7 +6,7 @@ import PhraseContainer from './containers/PhraseContainer';
 import NavBar from './components/NavBar';
 import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
-import Resources from './components/Resources';
+import Resources from './components/ResourcesPage';
 // import banner_3 from '../public/images/banner_3.png';
 
 // import Footer from './components/Footer'
