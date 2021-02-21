@@ -44,6 +44,16 @@ li {
   font-size: 20px;
 }
 
+.welcome{
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 28px;
+  color:tomato;
+  padding: 10px;
+
+}
+
 .SM {
   float: right;
   width:150px;
@@ -52,7 +62,28 @@ li {
 } 
 
 .banner-1 {
+  color: black;
+  font-family: Helvetica Neue;
+  font-style: light;
+  text-align: center;
+  font-size: 18px;
+}
 
+.user-stories-title {
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 28px;
+  color:tomato;
+  padding: 10px;
+}
+
+.leaderboard-2 {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto
 }
 
 .footer {

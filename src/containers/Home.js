@@ -6,6 +6,7 @@ import LanguageList from '../components/LanguageList';
 import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
 import '../style.css'
+import LeaderBoard from '../components/LeaderBoard';
 import UserStories from '../components/UserStories';
 import Footer from '../components/Footer';
 // import Logo from '../components/Logo';
@@ -22,11 +23,13 @@ class Home extends Component {
          
          <>
        
-            <h2>Welcome</h2>
-            <UserStories />
-            <LanguageList />
-            <br/><br/>
-            <Footer />
+            <h2 className="welcome">Welcome</h2>
+                <LeaderBoard />
+                <br/><br/>
+                <UserStories />
+                <LanguageList />
+                <br/><br/>
+                <Footer />
          </>
      )
    
