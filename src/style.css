@@ -1,6 +1,4 @@
-/* .nav-wrapper {
-  color: tomato;
-} */
+
 body {
   margin: 0;
   font-family: helvetica;
@@ -11,33 +9,30 @@ body {
   width: 200px;
   height: 100px;
   padding: 30px;
+  margin: 5px;
   text-align: left;
   display: block; 
-  /* justifyContent: center; */
-  /* align: left; */
-  margin: 5px;
+  margin: 20px 20px;
 }
 
 .nav-wrapper {
-  /* /* list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; */
-  /* text-align: center; */
   font-family: Helvetica Neue;
-  /* font-style: normal; */
-  /* font-size: 28px; */
   color:black;
   padding: 10px;
+  background-color:rgb(244, 238, 156);
+  overflow: hidden;
+  
 }
 
-.links {
-  color: black;
-}
-
-ul.black {
+.nav-type {
   color: white;
 }
+
+.SM {
+  float: right;
+  width:150px;
+  margin-right: 70px;
+} 
 
 li {
   float: left;
@@ -48,23 +43,21 @@ li {
   font-size: 16px;
   font-family: Helvetica Neue;
   font-style: normal;
+  color: white;
 }
-
 
 .welcome {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
   font-size: 32px;
-  color:black;
+  color:rgb(0, 0, 0);
   padding: 10px;
-
 }
 
 .banner-1 {
   font-style: light;
   text-align: center;
-  
 }
 
 .paragraph-1 {
@@ -74,15 +67,14 @@ li {
   font-style: light;
   text-align: left;
   margin: 0px 100px;
-
 }
 
 .user-stories-title {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
-  font-size: 26px;
-  color:black;
+  font-size: 22px;
+  color:rgb(0, 0, 0);
   padding: 10px;
 }
 
@@ -93,12 +85,13 @@ li {
   align-items: center;
   margin: auto
 }
+
 .languages-title {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
-  font-size: 26px;
-  color:black;
+  font-size: 22px;
+  color: rgb(1, 1, 1);
   padding: 10px;
 }
 
@@ -114,8 +107,11 @@ li {
 .language-list {
   display: inline;
   float: center;
-  /* text-align: center; */
 }
+
+/* .language-list-button {
+   background-color: blue;
+} */
 
 .language-name {
   text-align: center;
@@ -139,21 +135,33 @@ li {
   font-family: Helvetica Neue;
   font-style: normal;
   font-size: 26px;
-  color:black;
+  color:rgb(0, 0, 0);
   padding: 10px;
 }
 
-.SM {
-  float: right;
-  width:150px;
-  margin-right: 70px;
+.phrase-img {
+  margin: 10px 10px;
+  padding: 20px;
+}
 
-} 
+.phrases {
+  margin: 10px 10px;
+  color:black;
+  font-family: Helvetica Neue;
+  font-size: 18px;
+  text-align: left;
+  margin: 0px 100px;
+}
+
+
+/* .phrase-by-language {
+
+} */
 
 .footer {
   text-align: center;
-  font-family: Helvetica Neue;
-  font-style: light;
-  color: black;
+  font-family: Helvetica Neue, thin;
+  font-style: thin;
+  color: LightSteelBlue;
  
 } 

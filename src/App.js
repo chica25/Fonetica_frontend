@@ -6,16 +6,10 @@ import PhraseContainer from './containers/PhraseContainer';
 import NavBar from './components/NavBar';
 import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
-import Resources from './components/ResourcesPage';
+import ReviewsPage from './components/ReviewsPage';
 import './style.css'
 import Footer from './components/Footer';
-// import sm_icons from './images/sm_icons.png'
-import SocialMediaIcons from './components/SocialMediaIcons';
-// import Logo from './components/Logo';
-
-// import banner_3 from '../public/images/banner_3.png';
-
-// import Footer from './components/Footer'
+import Logo from './components/Logo';
 
 class App extends React.Component {
 
@@ -26,19 +20,18 @@ class App extends React.Component {
 
 
   render(){
+  
     return (
       <Router>
+          <Logo />
        <NavBar/>
           <Switch>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/languages" component={LanguageList}/>
               <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
-              <Route exact path="/resources" component={ResourcesPage}/>
-          <br/>
-        
-            </Switch> 
-            <SocialMediaIcons />
-            <Footer />  
+              <Route exact path="/reviews" component={ReviewsPage}/>
+          </Switch> 
+          <Footer/> 
      </Router>
      );
   }

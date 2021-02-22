@@ -35,7 +35,7 @@ class PhraseForm extends React.Component {
  
         render(){
                return(
-                <div>
+                <div >
                     <h2>Add a Phrase</h2>
                     <form onSubmit={this.phraseSubmitHandler} >
                         <label>English Phrase:</label>

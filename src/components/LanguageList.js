@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchLanguagePhrases, selectLanguage , fetchLanguages} from '../actions/actionsCreator.js';
 import { Link } from 'react-router-dom';
+import language_page_img from '../images/language_page_img.png'
 
     class LanguageList extends React.Component {
         // constructor(props){
@@ -60,17 +61,20 @@ import { Link } from 'react-router-dom';
             // if/else statement add here
            
             // sort iteration ----- const languages = this.state.sortArray.map((lang, i) => 
+         
             const languages = this.props.languages.map((lang, i) => 
                 <div className="language-list" key={i}> <h4 style={{ }}>{lang.language_name}</h4>
                     <Link to={`/languages/phrases/${lang.language_name}`}>
+                        <br/>
                         <button className="language-list-button" onClick={this.handleClick}>
                             <img className="language-imgs" src={lang.flag_image} id={lang.id} alt="languages"  mode='fit'/>     
                         </button>
                     </Link>
                 </div>)
             return(
-
+              
                 <div className="languages-title" id="lang">
+                     <img className="languages-page-img" src={language_page_img} alt="image"></img>
                      <h3>ALL LANGUAGES</h3>
                        <div className="language-name">{languages}</div> 
 

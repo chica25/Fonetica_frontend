@@ -8,7 +8,7 @@ function Footer() {
 //     color: "LightSteelBlue"
 // } 
     return(
-        <div className="footer" >
+        <div className="footer">
           <h5>Copyright© 2021 | Fonetica. All rights reserved</h5>
           
         </div>

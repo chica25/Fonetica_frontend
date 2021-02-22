@@ -1,10 +1,10 @@
 import React from 'react'
-import fonetica_logo_2 from '../images/fonetica_logo_2.png'
+import fonetica_logo_red from '../images/fonetica_logo_red.png'
 
 function Logo() {
     return (
         <div className="logo">
-          <img src={fonetica_logo_2} alt="logo"/>  
+          <img src={fonetica_logo_red} alt="logo"/>  
         </div>
     )
 }

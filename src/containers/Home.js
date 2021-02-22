@@ -8,9 +8,6 @@ import { connect } from 'react-redux';
 import '../style.css'
 import LeaderBoard from '../components/LeaderBoard';
 import UserStories from '../components/UserStories';
-import Footer from '../components/Footer';
-// import Logo from '../components/Logo';
-
 
 
 class Home extends Component {
