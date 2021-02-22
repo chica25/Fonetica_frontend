@@ -19,62 +19,70 @@ body {
 }
 
 .nav-wrapper {
-  list-style-type: none;
+  /* /* list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; */
+  /* text-align: center; */
+  font-family: Helvetica Neue;
+  /* font-style: normal; */
+  /* font-size: 28px; */
+  color:black;
+  padding: 10px;
 }
 
-.li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(44, 157, 210);
-  
+.links {
+  color: black;
+}
+
+ul.black {
+  color: white;
 }
 
 li {
   float: left;
   text-align: center;
-  color: white;
   display: block;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-style: normal;
 }
 
-.welcome{
+
+.welcome {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
-  font-size: 28px;
-  color:tomato;
+  font-size: 32px;
+  color:black;
   padding: 10px;
 
 }
 
-.SM {
-  float: right;
-  width:150px;
-  margin-right: 70px;
-
-} 
-
 .banner-1 {
-  color: black;
-  font-family: Helvetica Neue;
   font-style: light;
   text-align: center;
+  
+}
+
+.paragraph-1 {
+  color: black;
+  font-family: Helvetica Neue;
   font-size: 18px;
+  font-style: light;
+  text-align: left;
+  margin: 0px 100px;
+
 }
 
 .user-stories-title {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
-  font-size: 28px;
-  color:tomato;
+  font-size: 26px;
+  color:black;
   padding: 10px;
 }
 
@@ -85,10 +93,67 @@ li {
   align-items: center;
   margin: auto
 }
+.languages-title {
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 26px;
+  color:black;
+  padding: 10px;
+}
+
+.languages-names {
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 28px;
+  color:black;
+  padding: 10px;
+}
+
+.language-list {
+  display: inline;
+  float: center;
+  /* text-align: center; */
+}
+
+.language-name {
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 16px;
+  color:black;
+  padding: 10px;
+}
+
+.language-imgs {
+  width: 55px;
+  height: 40px;
+  display: block;
+  float: left;
+  border: 0.5px solid grey;
+}
+
+.resources-title {
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 26px;
+  color:black;
+  padding: 10px;
+}
+
+.SM {
+  float: right;
+  width:150px;
+  margin-right: 70px;
+
+} 
 
 .footer {
   text-align: center;
-  font-family: HelveticaNeue-Light;
-  font-style: normal;
-  color: LightSteelBlue;
-}
+  font-family: Helvetica Neue;
+  font-style: light;
+  color: black;
+ 
+} 

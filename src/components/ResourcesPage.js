@@ -2,7 +2,7 @@ import React from 'react'
 
  function ResourcesPage() {
     return (
-        <h2>Resources</h2>
+        <h2 className="resources-title">RESOURCES</h2>
     )
 }
 

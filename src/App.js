@@ -8,6 +8,9 @@ import { connect } from 'react-redux';
 import {fetchLanguages} from './actions/actionsCreator';
 import Resources from './components/ResourcesPage';
 import './style.css'
+import Footer from './components/Footer';
+// import sm_icons from './images/sm_icons.png'
+import SocialMediaIcons from './components/SocialMediaIcons';
 // import Logo from './components/Logo';
 
 // import banner_3 from '../public/images/banner_3.png';
@@ -23,25 +26,21 @@ class App extends React.Component {
 
 
   render(){
-
     return (
-      
-     <Router>
+      <Router>
        <NavBar/>
           <Switch>
               <Route exact path="/home" component={Home}/>
               <Route exact path="/languages" component={LanguageList}/>
               <Route exact path="/languages/phrases/:id" component={PhraseContainer}/>
-              <Route exact path="/resources" component={Resources}/>
-               {/* <Route exact path="/phrases/" component={PhraseForm}/> */}
-               {/* <img style={img1} src={banner_3 } alt="banner" />  */}
-      <br/>
-            </Switch>
-            {/* <Footer /> */}
+              <Route exact path="/resources" component={ResourcesPage}/>
+          <br/>
+        
+            </Switch> 
+            <SocialMediaIcons />
+            <Footer />  
      </Router>
-
-     
-    );
+     );
   }
 }
 

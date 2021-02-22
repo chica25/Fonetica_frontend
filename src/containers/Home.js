@@ -23,13 +23,11 @@ class Home extends Component {
          
          <>
        
-            <h2 className="welcome">Welcome</h2>
+            <h3 className="welcome">WELCOME</h3>
                 <LeaderBoard />
                 <br/><br/>
                 <UserStories />
                 <LanguageList />
-                <br/><br/>
-                <Footer />
          </>
      )
    

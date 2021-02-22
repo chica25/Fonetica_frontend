@@ -5,7 +5,7 @@ function UserStories() {
 
     return(
         <div className="user-stories-title">
-            <h3>Student Stories</h3>
+            <h3>STUDENT STORIES</h3>
             <img className="leaderboard-2" src={mid_leaderboard} alt="middle-banner"/>
         </div>
     )

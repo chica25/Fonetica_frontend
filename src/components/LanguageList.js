@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
         // constructor(props){
         //     super(props)
 
-        state = {
-            // count: 
-            sortArray: []
-        }
+        // state = {
+        //     // count: 
+        //     sortArray: []
+        // }
         
     
         handleClick = (e) => {     
@@ -25,15 +25,16 @@ import { Link } from 'react-router-dom';
 
         }
 
-        handleSort = () => {
+        // Sort -----------
+        // handleSort = () => {
+        //     // debugger
+        //     let copySort = this.props.languages
             // debugger
-            let copySort = this.props.languages
-            // debugger
-            this.setState({ 
-                sortArray: copySort.sort((a, b) => (a.language_name > b.language_name) ? -1 : 1)
-                })
-            }
-    
+            // this.setState({ 
+            //     sortArray: copySort.sort((a, b) => (a.language_name > b.language_name) ? -1 : 1)
+            //     })
+            // }
+      // end -----------
             // store the copySort in the sort array
             // in the render - render the state
             // add an if and else statement 
@@ -57,28 +58,26 @@ import { Link } from 'react-router-dom';
         //     });
 
             // if/else statement add here
-
-            const languages = this.state.sortArray.map((lang, i) => 
-                <div key={i}> <h4 style={{ }}>{lang.language_name}</h4>
+           
+            // sort iteration ----- const languages = this.state.sortArray.map((lang, i) => 
+            const languages = this.props.languages.map((lang, i) => 
+                <div className="language-list" key={i}> <h4 style={{ }}>{lang.language_name}</h4>
                     <Link to={`/languages/phrases/${lang.language_name}`}>
-                        <button onClick={this.handleClick}>
-                            <img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/>     
+                        <button className="language-list-button" onClick={this.handleClick}>
+                            <img className="language-imgs" src={lang.flag_image} id={lang.id} alt="languages"  mode='fit'/>     
                         </button>
                     </Link>
                 </div>)
             return(
 
-                <div className="language" id="lang">
-                     <h3 style={{ color: 'purple' }}>Select a Language</h3>
-                        {languages}
-                    <button onClick={this.handleSort}>sort button</button> 
-                 {/* {this.props.languages}  */}
-                {/* <br/>
-                {/* <button onClick={this.decrement}>+</button>
-                <button onClick={this.decrement}>-</button>
+                <div className="languages-title" id="lang">
+                     <h3>ALL LANGUAGES</h3>
+                       <div className="language-name">{languages}</div> 
 
-                <p>{this.state.count}</p>
-                */}
+            {/* sort onclick ----- */}
+                    {/* <button onClick={this.handleSort}>sort button</button>  */}
+                 {/* {this.props.languages}  */}
+              
                 </div>
                
             )
