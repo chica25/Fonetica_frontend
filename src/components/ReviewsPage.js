@@ -3,9 +3,9 @@ import reviews from '../images/reviews.png'
 
  function ReviewsPage() {
     return (
-        <div className="resources-title">
-        <h2>REVIEWS</h2>
-        <img className="reviews" src={reviews} alt={"reviews image"}/>
+        <div>
+        <h2 className="reviews-title">REVIEWS</h2>
+        <img className="reviews-img" src={reviews} alt="reviews" />
         </div>
     )
 }

@@ -9,9 +9,9 @@ function NavBar() {
         <nav className= "nav-wrapper">
         <div className="nav-type">
             <ul>
-                <li><Link to="/home">HOME</Link></li>
-                <li><Link to="/languages">LANGUAGES</Link></li>
-                <li><Link to="/reviews">REVIEWS</Link></li>
+                <li className="li"><Link to="/home">HOME</Link></li>
+                <li className="li"><Link to="/languages">LANGUAGES</Link></li>
+                <li className="li"><Link to="/reviews">REVIEWS</Link></li>
                 <SocialMediaIcons />
             </ul>
         </div>

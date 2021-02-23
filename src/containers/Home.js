@@ -7,7 +7,7 @@ import { fetchLanguages } from '../actions/actionsCreator.js';
 import { connect } from 'react-redux';
 import '../style.css'
 import LeaderBoard from '../components/LeaderBoard';
-import UserStories from '../components/UserStories';
+import StudentStories from '../components/StudentStories';
 
 
 class Home extends Component {
@@ -23,7 +23,7 @@ class Home extends Component {
             <h3 className="welcome">WELCOME</h3>
                 <LeaderBoard />
                 <br/><br/>
-                <UserStories />
+                <StudentStories />
                 <LanguageList />
          </>
      )

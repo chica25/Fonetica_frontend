@@ -24,8 +24,23 @@ body {
   
 }
 
+.li {
+  margin-top: 20px;
+  font-family: Helvetica Neue;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 5px;
+}
+
 .nav-type {
   color: white;
+  margin-top: 20px;
+  background-color: #000000;
+  color: #f2f2f2;
+  font-size: 40px;
+  font-family: "Calibri";
+  text-align: center;
 }
 
 .SM {
@@ -51,7 +66,7 @@ li {
   font-family: Helvetica Neue;
   font-style: normal;
   font-size: 32px;
-  color:rgb(0, 0, 0);
+  color:black;
   padding: 10px;
 }
 
@@ -69,12 +84,12 @@ li {
   margin: 0px 100px;
 }
 
-.user-stories-title {
+.student-stories-title {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
   font-size: 22px;
-  color:rgb(0, 0, 0);
+  color:rgb(237, 83, 83);
   padding: 10px;
 }
 
@@ -90,9 +105,19 @@ li {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
-  font-size: 22px;
-  color: rgb(1, 1, 1);
+  font-size: 32px;
+  color: rgb(0, 0, 0);
   padding: 10px;
+}
+
+.languages-page-img {
+  margin: 10px 10px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto
 }
 
 .languages-names {
@@ -130,18 +155,42 @@ li {
   border: 0.5px solid grey;
 }
 
-.resources-title {
+.reviews-title {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
-  font-size: 26px;
+  font-size: 32px;
   color:rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.reviews-img {
+  margin: 10px 10px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto
+}
+
+.phrase-title {
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 22px;
+  color: rgb(1, 1, 1);
   padding: 10px;
 }
 
 .phrase-img {
   margin: 10px 10px;
   padding: 20px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto
 }
 
 .phrases {
@@ -149,14 +198,42 @@ li {
   color:black;
   font-family: Helvetica Neue;
   font-size: 18px;
-  text-align: left;
-  margin: 0px 100px;
+  text-align: center;
+  /* margin: 0px 100px; */
+  width:200px;
+  margin-left: 450px;
+}
+.form-title {
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-size: 22px;
+  color: rgb(1, 1, 1);
+  padding: 10px;
 }
 
+ .form {
+  margin: 10px 10px;
+  color:rgb(0, 0, 0);
+  font-family: Helvetica Neue;
+  font-size: 18px;
+  text-align: center;
+  margin: 0px 100px;
 
-/* .phrase-by-language {
+} 
 
-} */
+.input {
+  width: 0px;
+  height: 50px;
+  background: #f3f0f1;
+  position: relative;
+  background: #f3f0f1;
+  margin-bottom: 25px;
+  border-radius: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
 
 .footer {
   text-align: center;

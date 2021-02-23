@@ -4,20 +4,14 @@ import { fetchLanguagePhrases, selectLanguage , fetchLanguages} from '../actions
 import { Link } from 'react-router-dom';
 import language_page_img from '../images/language_page_img.png'
 
-    class LanguageList extends React.Component {
-        // constructor(props){
-        //     super(props)
 
-        // state = {
-        //     // count: 
-        //     sortArray: []
-        // }
-        
-    
+    class LanguageList extends React.Component {
+
         handleClick = (e) => {     
             // console.log(e.target.id, "hello!")
         this.props.fetchLanguagePhrases(e.target.id)
-        this.props.selectLanguage(e.target.id)  //notes - this.props.selectLanguage comes from the reudx store
+        // debugger
+        this.props.selectLanguage(e.target.id)
         // debugger
         //when user clicks on a flag 
         // it will fetch the phrases of the language
@@ -26,80 +20,41 @@ import language_page_img from '../images/language_page_img.png'
 
         }
 
-        // Sort -----------
-        // handleSort = () => {
-        //     // debugger
-        //     let copySort = this.props.languages
-            // debugger
-            // this.setState({ 
-            //     sortArray: copySort.sort((a, b) => (a.language_name > b.language_name) ? -1 : 1)
-            //     })
-            // }
-      // end -----------
-            // store the copySort in the sort array
-            // in the render - render the state
-            // add an if and else statement 
-
-            // increment = () => {
-            //     this.setState((prevState) => {
-            //         return { count: prevState.count - 1}
-            //     })
-            // }
-
-            // decrement = () => {
-            //     this.setState((prevState) => {
-            //         return { count: prevState.count + 1}
-            //     })
-            // }
-        
         render(){
-        //     const sorted = languages.sort( (a, b) =>  {
-        //         const isReversed = (sortType === 'desc') ? 1 :-1;
-        //         return isReversed = a.language_name(b.language_name) 
-        //     });
-
-            // if/else statement add here
-           
-            // sort iteration ----- const languages = this.state.sortArray.map((lang, i) => 
-         
             const languages = this.props.languages.map((lang, i) => 
-                <div className="language-list" key={i}> <h4 style={{ }}>{lang.language_name}</h4>
+                <div key={i}> <h4 style={{ }}>{lang.language_name}</h4>
                     <Link to={`/languages/phrases/${lang.language_name}`}>
-                        <br/>
-                        <button className="language-list-button" onClick={this.handleClick}>
-                            <img className="language-imgs" src={lang.flag_image} id={lang.id} alt="languages"  mode='fit'/>     
+                        <button onClick={this.handleClick}>
+                            <img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/>     
                         </button>
                     </Link>
+
                 </div>)
             return(
-              
-                <div className="languages-title" id="lang">
-                     <img className="languages-page-img" src={language_page_img} alt="image"></img>
-                     <h3>ALL LANGUAGES</h3>
-                       <div className="language-name">{languages}</div> 
 
-            {/* sort onclick ----- */}
-                    {/* <button onClick={this.handleSort}>sort button</button>  */}
-                 {/* {this.props.languages}  */}
-              
+                <div>
+                    <h3 className="languages-title">ALL LANGUAGES</h3>
+                    <img className="languages-page-img" src={language_page_img} alt="image"></img>
+                    <div className="language-name">{languages}</div> 
                 </div>
                
             )
         }
     }
 
-const mapStateToProps = (state) => {  //notes - MapStateToProps gets the state from the redux store
-    return {
+    const mapStateToProps = (state) => {  //notes - MapStateToProps gets the state from the redux store
+        return {
 
-        languages: state.languages,
-        selectedLanguage: state.selectedLanguage
+            languages: state.languages,
+            selectedLanguage: state.selectedLanguage
+        }
+    
+        // add this.drops on a debugger
     }
-  
-    // add this.drops on a debugger
-}
 
 
 export default connect(mapStateToProps, { fetchLanguagePhrases, selectLanguage, fetchLanguages })(LanguageList);
+
 // notes - connecting a higher order component to the redux store
 // Redux Thunk actions - fetchLanguagePhrases, selectLanguage, fetchLanguages 
 // Thunk is a middleware - Passes through the dis
