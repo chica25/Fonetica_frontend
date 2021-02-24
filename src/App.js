@@ -5,18 +5,23 @@ import LanguageList from './components/LanguageList';
 import PhraseContainer from './containers/PhraseContainer';
 import NavBar from './components/NavBar';
 import { connect } from 'react-redux';
-import {fetchLanguages} from './actions/actionsCreator';
+import { fetchLanguages, selectLanguage, fetchLanguagePhrases } from './actions/actionsCreator';
 import ReviewsPage from './components/ReviewsPage';
 import './style.css'
 import Footer from './components/Footer';
 import Logo from './components/Logo';
+import { get } from './helpers'
 
 class App extends React.Component {
-
+  
   componentDidMount() {
-    // console.log("hello")
-    this.props.fetchLanguages();     
-}
+    let langId = get('languageId')
+    if(langId){
+      this.props.selectLanguage(langId)
+      this.props.fetchLanguagePhrases(langId)
+    }
+    this.props.fetchLanguages()  
+  }
 
 
   render(){
@@ -37,4 +42,4 @@ class App extends React.Component {
   }
 }
 
-export default connect(null, {fetchLanguages})(App);
+export default connect(null, {selectLanguage, fetchLanguages, fetchLanguagePhrases})(App);

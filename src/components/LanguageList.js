@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchLanguagePhrases, selectLanguage , fetchLanguages} from '../actions/actionsCreator.js';
+import { fetchLanguagePhrases, selectLanguage, fetchLanguages} from '../actions/actionsCreator.js';
 import { Link } from 'react-router-dom';
 import language_page_img from '../images/language_page_img.png'
 
