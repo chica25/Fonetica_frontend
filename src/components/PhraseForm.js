@@ -36,7 +36,7 @@ class PhraseForm extends React.Component {
         render(){
                return(
                 <div>
-                    <h2 className="form-title">Add a Phrase</h2>
+                    <h2 className="form-title">ADD A PHRASE</h2>
                     <form className="form" onSubmit={this.phraseSubmitHandler}>
                         <label><b>English Phrase:</b>    </label>
                         <input placeholder="Enter phrase..."type="text" id="english-phrase" name="english_phrase" onChange={this.handlePhraseInput} value={this.state.english_phrase}/>
