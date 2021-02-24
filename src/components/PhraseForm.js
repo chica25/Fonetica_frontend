@@ -38,12 +38,12 @@ class PhraseForm extends React.Component {
                 <div>
                     <h2 className="form-title">Add a Phrase</h2>
                     <form className="form" onSubmit={this.phraseSubmitHandler}>
-                        <label>English Phrase:</label>
-                        <input placeholder="Enter phrase..."type="text" id="english_phrase" name="english_phrase" onChange={this.handlePhraseInput} value={this.state.english_phrase}/>
+                        <label><b>English Phrase:</b>    </label>
+                        <input placeholder="Enter phrase..."type="text" id="english-phrase" name="english_phrase" onChange={this.handlePhraseInput} value={this.state.english_phrase}/>
                         <br/>
-                        <label>Foreign Phrase:</label>
-                        <input placeholder="Enter phrase..." type="text" id="foreign_phrase" name="foreign_phrase" onChange={this.handlePhraseInput} value={this.state.foreign_phrase}/> 
-                        <br/>     
+                        <label><b>Foreign Phrase:</b>    </label>
+                        <input placeholder="Enter phrase..." type="text" id="foreign-phrase" name="foreign_phrase" onChange={this.handlePhraseInput} value={this.state.foreign_phrase}/> 
+                         
                        <button id="form-btn" type="submit">Submit</button>
                     </form>
                 </div>

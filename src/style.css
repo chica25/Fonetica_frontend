@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  font-family: Helvetica Neue;
 }
 
 .logo {
@@ -14,7 +15,6 @@ body {
 }
 
 .nav-wrapper {
-  font-family: Helvetica Neue;
   color:black;
   padding: 10px;
   background-color:rgb(244, 238, 156);
@@ -24,7 +24,6 @@ body {
 
 li {
   margin-top: 20px;
-  font-family: Helvetica Neue;
   color: white;
   font-size: 18px;
   text-align: center;
@@ -55,14 +54,12 @@ li {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 16px;
-  font-family: Helvetica Neue;
   font-style: normal;
   color: white;
 }
 
 .welcome {
   text-align: center;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-size: 32px;
   color:black;
@@ -76,7 +73,6 @@ li {
 
 .paragraph-1 {
   color: black;
-  font-family: Helvetica Neue;
   font-size: 18px;
   font-style: light;
   text-align: left;
@@ -85,7 +81,6 @@ li {
 
 .student-stories-title {
   text-align: center;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-size: 22px;
   color:rgb(237, 83, 83);
@@ -102,7 +97,6 @@ li {
 
 .languages-title {
   text-align: center;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-size: 32px;
   color: rgb(0, 0, 0);
@@ -132,10 +126,6 @@ li {
   display: inline;
   float: center;
 }
-
-/* .language-list-button {
-   background-color: blue;
-} */
 
 .language-name {
   text-align: center;
@@ -195,17 +185,14 @@ li {
 .phrases {
   margin: 10px 10px;
   color:black;
-  font-family: Helvetica Neue;
   font-size: 18px;
   text-align: center;
-  /* margin: 0px 100px; */
   width:200px;
   margin-left: 450px;
 }
 .form-title {
   position:relative;
   text-align: center;
-  font-family: Helvetica Neue;
   font-style: normal;
   font-size: 22px;
   color: rgb(1, 1, 1);
@@ -213,35 +200,15 @@ li {
   border:0;
 }
 
-/* .english-phrase {
-  text-align: center;
-  position:relative;
-}
-
-.foreign-phrase {
-  text-align: center;
-  position:relative;
-} */
-
  .form {
-  /* margin: 10px 10px;
-  color:rgb(0, 0, 0);
-  font-family: Helvetica Neue;
-  font-size: 18px;
-  text-align: center;
-  margin: 0px 100px; */
   max-width: 500px;
   margin: 2rem auto;
   border: 2px solid;
   padding: 2rem;
   width: 600px;
   display: block;
-   /* label{
-    display:block;
- }
-  input, type{
-    diplay:block;
-  }  */
+  position: relative;
+  width: 100%;
 } 
 
 #form-btn {
@@ -252,8 +219,8 @@ li {
   margin: 1rem;
   width: auto;
   text-transform: uppercase;
-  font-family: Helvetica Neue;
-  cursor:pointer;
+  cursor: pointer;
+  text-align: right;
 }
 
 .input {
@@ -269,8 +236,11 @@ li {
 
 .footer {
   text-align: center;
-  font-family: Helvetica Neue, thin;
   font-style: thin;
   color: LightSteelBlue;
+  color:black;
+  padding: 10px;
+  background-color:rgb(244, 238, 156);
+  overflow: hidden;
  
 } 
