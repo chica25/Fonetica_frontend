@@ -1,8 +1,6 @@
 
 body {
   margin: 0;
-  font-family: helvetica;
-  color:black;
 }
 
 .logo {
@@ -24,13 +22,14 @@ body {
   
 }
 
-.li {
+li {
   margin-top: 20px;
   font-family: Helvetica Neue;
   color: white;
   font-size: 18px;
   text-align: center;
-  margin: 5px 5px;
+  margin: -4px 5px;
+  text-decoration: none;
 }
 
 .nav-type {
@@ -204,23 +203,58 @@ li {
   margin-left: 450px;
 }
 .form-title {
+  position:relative;
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
   font-size: 22px;
   color: rgb(1, 1, 1);
   padding: 10px;
+  border:0;
 }
 
+/* .english-phrase {
+  text-align: center;
+  position:relative;
+}
+
+.foreign-phrase {
+  text-align: center;
+  position:relative;
+} */
+
  .form {
-  margin: 10px 10px;
+  /* margin: 10px 10px;
   color:rgb(0, 0, 0);
   font-family: Helvetica Neue;
   font-size: 18px;
   text-align: center;
-  margin: 0px 100px;
-
+  margin: 0px 100px; */
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 2px solid;
+  padding: 2rem;
+  width: 600px;
+  display: block;
+   /* label{
+    display:block;
+ }
+  input, type{
+    diplay:block;
+  }  */
 } 
+
+#form-btn {
+  border: 0;
+  background:rgb(230, 76, 76);
+  padding: 0.6rem;
+  color: white;
+  margin: 1rem;
+  width: auto;
+  text-transform: uppercase;
+  font-family: Helvetica Neue;
+  cursor:pointer;
+}
 
 .input {
   width: 0px;
@@ -230,9 +264,7 @@ li {
   background: #f3f0f1;
   margin-bottom: 25px;
   border-radius: 32px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.1s ease-in-out;
+
 }
 
 .footer {
