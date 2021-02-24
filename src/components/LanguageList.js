@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchLanguagePhrases, selectLanguage, fetchLanguages} from '../actions/actionsCreator.js';
 import { Link } from 'react-router-dom';
-import language_page_img from '../images/language_page_img.png'
+import language_page_img from '../images/language_page_img.png';
 
 
     class LanguageList extends React.Component {
@@ -22,13 +22,14 @@ import language_page_img from '../images/language_page_img.png'
 
         render(){
             const languages = this.props.languages.map((lang, i) => 
-                <div key={i}> <h4 style={{ }}>{lang.language_name}</h4>
+                <div key={i}> <h4>{lang.language_name}</h4>
                     <Link to={`/languages/phrases/${lang.language_name}`}>
                         <button onClick={this.handleClick}>
                             <img src={lang.flag_image} id={lang.id} alt="languages" width={80} height={60} mode='fit'/>     
                         </button>
                     </Link>
-
+                    <br/>
+                    <br/>
                 </div>)
             return(
 

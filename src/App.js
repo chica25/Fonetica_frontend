@@ -18,6 +18,7 @@ class App extends React.Component {
     let langId = get('languageId')
     if(langId){
       this.props.selectLanguage(langId)
+      // console.log(langId)
       this.props.fetchLanguagePhrases(langId)
     }
     this.props.fetchLanguages()  

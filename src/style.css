@@ -183,12 +183,28 @@ li {
 }
 
 .phrases {
-  margin: 10px 10px;
+  /* margin: 10px 10px;
   color:black;
   font-size: 18px;
   text-align: center;
   width:200px;
-  margin-left: 450px;
+  margin-left: 450px; */
+
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+	width: 20%;
+	min-width: 50px;
+	max-width: 200px;
+	padding: 50px 20px 20px;
+	/* position: relative; */
+	vertical-align: top;
+	margin: 5px;
+	/* font-family: 'helvetica', san-serif; */
+	min-height: 15vh;
+	background: #7fc9dc;
+	/* border: 1px solid #252727; */
+	text-align: left;
 }
 .form-title {
   position:relative;

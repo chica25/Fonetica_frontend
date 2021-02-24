@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PhrasesByLanguage from '../components/PhrasesByLanguage'
 import PhraseForm from '../components/PhraseForm'
 import PhraseImg from '../components/PhraseImg'
+import LanguageList from '../components/LanguageList';
 
 class PhraseContainer extends Component {
 
@@ -16,8 +17,9 @@ class PhraseContainer extends Component {
                 <PhraseImg />
                 <PhrasesByLanguage phrases={this.props.phrases}/> 
                 </div> 
-                 <br/> <br/>
-                  <PhraseForm />
+                <br/> <br/>
+                <PhraseForm />
+                <LanguageList />
             </>
             
         )

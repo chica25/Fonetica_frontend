@@ -19,7 +19,6 @@ export const languageReducer = (state = initialState, action) => {
         case 'SELECTED_LANGUAGE':
             set('languageId', action.payload)
             return {...state, selectedLanguage: action.payload}
-
     
             default:
                 return state;

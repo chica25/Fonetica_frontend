@@ -24,7 +24,8 @@ class Home extends Component {
                 <LeaderBoard />
                 <br/><br/>
                 <StudentStories />
-                <LanguageList />
+              
+                <LanguageList languages={this.props.language}/>
          </>
      )
    
