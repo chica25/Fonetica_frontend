@@ -7,8 +7,8 @@ function PhrasesByLanguage (props) {
                 return (
                     <div className="phrases" key={id}>
 
-                       English Phrase: {phrase.english_phrase} <br/>
-                        Foreign Phrase:{phrase.foreign_phrase}
+                        <b>English Phrase:</b> {phrase.english_phrase} <br/>
+                        <b>Foreign Phrase:</b> {phrase.foreign_phrase}
                     </div>
                 )
              })}
