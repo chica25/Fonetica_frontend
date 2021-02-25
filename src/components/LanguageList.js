@@ -7,17 +7,10 @@ import language_page_img from '../images/language_page_img.png';
 
     class LanguageList extends React.Component {
 
+  
         handleClick = (e) => {     
-            // console.log(e.target.id, "hello!")
-        this.props.fetchLanguagePhrases(e.target.id)
-        // debugger
-        this.props.selectLanguage(e.target.id)
-        // debugger
-        //when user clicks on a flag 
-        // it will fetch the phrases of the language
-        // connect the info to the redux store
-        // it'll direct them to the phrases of that language
-
+            this.props.fetchLanguagePhrases(e.target.id)
+            this.props.selectLanguage(e.target.id)
         }
 
         render(){
@@ -31,8 +24,8 @@ import language_page_img from '../images/language_page_img.png';
                     <br/>
                     <br/>
                 </div>)
+            
             return(
-
                 <div>
                     <h3 className="languages-title">ALL LANGUAGES</h3>
                     <img className="languages-page-img" src={language_page_img} alt="image"></img>
@@ -43,19 +36,14 @@ import language_page_img from '../images/language_page_img.png';
         }
     }
 
-    const mapStateToProps = (state) => {  //notes - MapStateToProps gets the state from the redux store
+    const mapStateToProps = (state) => { 
         return {
-
             languages: state.languages,
             selectedLanguage: state.selectedLanguage
         }
     
-        // add this.drops on a debugger
     }
 
 
 export default connect(mapStateToProps, { fetchLanguagePhrases, selectLanguage, fetchLanguages })(LanguageList);
 
-// notes - connecting a higher order component to the redux store
-// Redux Thunk actions - fetchLanguagePhrases, selectLanguage, fetchLanguages 
-// Thunk is a middleware - Passes through the dis

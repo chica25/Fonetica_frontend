@@ -2,6 +2,8 @@
 body {
   margin: 0;
   font-family: Helvetica Neue;
+
+  justify-content: center;
 }
 
 .logo {
@@ -183,29 +185,22 @@ li {
 }
 
 .phrases {
-  /* margin: 10px 10px;
-  color:black;
-  font-size: 18px;
-  text-align: center;
-  width:200px;
-  margin-left: 450px; */
-
   display: inline-block;
-  text-align: center;
-  list-style: none;
+  text-align: left; 
 	width: 20%;
 	min-width: 50px;
 	max-width: 200px;
-	padding: 50px 20px 20px;
-	/* position: relative; */
+	padding: 30px 20px;
 	vertical-align: top;
 	margin: 5px;
-	/* font-family: 'helvetica', san-serif; */
-	min-height: 15vh;
-	background: #7fc9dc;
-	/* border: 1px solid #252727; */
-	text-align: left;
+  min-width: 25vh;
+	min-height: 10vh;
+	background: #8addf1;
+  /* border: solid rgb(247, 77, 77) 1px; */
+  position: relative;
+  /* justify-content: space-between; */
 }
+
 .form-title {
   position:relative;
   text-align: center;

@@ -19,7 +19,6 @@ class PhraseContainer extends Component {
                 </div> 
                 <br/> <br/>
                 <PhraseForm />
-                <LanguageList />
             </>
             
         )
