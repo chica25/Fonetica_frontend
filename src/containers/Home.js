@@ -12,23 +12,17 @@ import StudentStories from '../components/StudentStories';
 
 class Home extends Component {
 
- 
- render() {
-    //  console.log("HELLO!!!", this.props)
-    
+ render() { 
      return(
          
          <>
-       
             <h3 className="welcome">WELCOME</h3>
-                <LeaderBoard />
-                <br/><br/>
-                <StudentStories />
-              
-                <LanguageList languages={this.props.language}/>
-         </>
-     )
-   
+            <LeaderBoard />
+            <br/><br/>
+            <StudentStories />
+            <LanguageList/>
+        </>
+        )
     }   
 }
 

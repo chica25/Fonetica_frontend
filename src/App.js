@@ -24,9 +24,7 @@ class App extends React.Component {
     this.props.fetchLanguages()  
   }
 
-
   render(){
-  
     return (
       <Router>
           <Logo />

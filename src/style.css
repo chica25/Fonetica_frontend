@@ -24,6 +24,11 @@ body {
   
 }
 
+a{
+  color:black;
+  font-size: 16px;
+}
+
 li {
   margin-top: 20px;
   color: white;
@@ -187,18 +192,20 @@ li {
 .phrases {
   display: inline-block;
   text-align: left; 
-	width: 20%;
-	min-width: 50px;
-	max-width: 200px;
+	width: 200px;
+	min-width: 100px;
+	max-width: 300px;
 	padding: 30px 20px;
 	vertical-align: top;
 	margin: 5px;
   min-width: 25vh;
 	min-height: 10vh;
 	background: #8addf1;
-  /* border: solid rgb(247, 77, 77) 1px; */
   position: relative;
-  /* justify-content: space-between; */
+
+ 
+  border-radius: 5px;
+  border-style: 1px solid;
 }
 
 .form-title {
@@ -255,3 +262,11 @@ li {
   overflow: hidden;
  
 } 
+
+.likesBtn {
+  height: 35px;
+  padding: 0 30px;
+  font-size: 11px;
+  background-color:skyBlue;
+  border-radius: 6px;
+}

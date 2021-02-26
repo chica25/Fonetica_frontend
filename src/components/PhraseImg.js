@@ -9,5 +9,4 @@ function PhraseImg() {
     )
 }
     
-
- export default PhraseImg;
+export default PhraseImg;

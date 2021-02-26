@@ -5,13 +5,16 @@ import { Link } from 'react-router-dom';
 import language_page_img from '../images/language_page_img.png';
 
 
+
+
     class LanguageList extends React.Component {
 
-  
+
         handleClick = (e) => {     
             this.props.fetchLanguagePhrases(e.target.id)
             this.props.selectLanguage(e.target.id)
         }
+
 
         render(){
             const languages = this.props.languages.map((lang, i) => 
@@ -30,6 +33,7 @@ import language_page_img from '../images/language_page_img.png';
                     <h3 className="languages-title">ALL LANGUAGES</h3>
                     <img className="languages-page-img" src={language_page_img} alt="image"></img>
                     <div className="language-name">{languages}</div> 
+                   
                 </div>
                
             )
