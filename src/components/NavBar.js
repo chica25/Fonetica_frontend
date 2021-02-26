@@ -12,6 +12,7 @@ function NavBar() {
                 <li className="li"><Link to="/home">HOME</Link></li>
                 <li className="li"><Link to="/languages">LANGUAGES</Link></li>
                 <li className="li"><Link to="/reviews">REVIEWS</Link></li>
+                <li className="li"><Link to="/meetups">MEETUPS</Link></li>
                 <SocialMediaIcons />
             </ul>
         </div>

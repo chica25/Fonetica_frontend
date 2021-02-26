@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PhrasesByLanguage from '../components/PhrasesByLanguage'
 import PhraseForm from '../components/PhraseForm'
 import PhraseImg from '../components/PhraseImg'
-import LanguageList from '../components/LanguageList';
 
 class PhraseContainer extends Component {
 

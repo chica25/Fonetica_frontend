@@ -68,7 +68,7 @@ li {
 .welcome {
   text-align: center;
   font-style: normal;
-  font-size: 32px;
+  font-size: 22px;
   color:black;
   padding: 10px;
 }
@@ -89,7 +89,7 @@ li {
 .student-stories-title {
   text-align: center;
   font-style: normal;
-  font-size: 22px;
+  font-size: 16px;
   color:rgb(237, 83, 83);
   padding: 10px;
 }
@@ -105,7 +105,7 @@ li {
 .languages-title {
   text-align: center;
   font-style: normal;
-  font-size: 32px;
+  font-size: 22px;
   color: rgb(0, 0, 0);
   padding: 10px;
 }
@@ -155,7 +155,7 @@ li {
   text-align: center;
   font-family: Helvetica Neue;
   font-style: normal;
-  font-size: 32px;
+  font-size: 22px;
   color:rgb(0, 0, 0);
   padding: 10px;
 }
@@ -263,10 +263,11 @@ li {
  
 } 
 
-.likesBtn {
-  height: 35px;
-  padding: 0 30px;
-  font-size: 11px;
-  background-color:skyBlue;
-  border-radius: 6px;
+.meetup-title {
+  text-align: center;
+  font-style: normal;
+  font-size: 22px;
+  color:black;
+  padding: 10px;
 }
+
