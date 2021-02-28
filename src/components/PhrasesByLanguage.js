@@ -9,6 +9,7 @@ function PhrasesByLanguage (props) {
                         <b>English Phrase:</b> {phrase.english_phrase}
                         <br/>
                         <b>Foreign Phrase:</b> {phrase.foreign_phrase}
+                        <br/><br/>
                     </div>
                 )
              })}

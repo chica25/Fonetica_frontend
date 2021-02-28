@@ -134,6 +134,19 @@ li {
   float: center;
 }
 
+.lang-list-btn {
+  border: 0;
+  /* background:rgb(230, 76, 76); */
+  /* padding: 0.6rem; */
+  color: black;
+  margin: 1rem;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: right;
+
+}
+
 .language-name {
   text-align: center;
   font-family: Helvetica Neue;
@@ -269,5 +282,14 @@ li {
   font-size: 22px;
   color:black;
   padding: 10px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto
 }
-
+/* 
+.like-btn {
+  cursor: pointer;
+  color: yello;
+} */
