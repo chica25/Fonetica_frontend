@@ -1,4 +1,5 @@
 import React from 'react';
+import LikeButton from './LikeButton';
 
 function PhrasesByLanguage (props) {
     return (
@@ -9,6 +10,8 @@ function PhrasesByLanguage (props) {
                         <b>English Phrase:</b> {phrase.english_phrase}
                         <br/>
                         <b>Foreign Phrase:</b> {phrase.foreign_phrase}
+                        <br/><br/>
+                        <LikeButton />
                     </div>
                 )
              })}

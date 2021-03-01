@@ -1,6 +1,7 @@
 import React from 'react';
 import { AddNewPhrase } from "../actions/actionsCreator";
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+
 
 class PhraseForm extends React.Component {
 
@@ -37,6 +38,7 @@ class PhraseForm extends React.Component {
                          
                        <button id="form-btn" type="submit">Submit</button>
                     </form>
+                   
                 </div>
             )
         }
